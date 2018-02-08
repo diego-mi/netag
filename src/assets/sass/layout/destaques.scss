@@ -1,0 +1,96 @@
+.destaques {
+  @extend .flex;
+  padding: 25px 30px;
+}
+
+.destaques__item {
+  @extend .box;
+  flex: 1;
+  margin-right: 7px;
+  margin-left: 7px;
+  background-color: $color-gray-second;
+  padding: 35px 30px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  // Variacoes
+  &--bemvindo {
+    background-color: #fff;
+  }
+
+  &--large {
+    flex: 1.3;
+  }
+
+  // Filhos
+
+  &__title {
+    @extend .h2;
+    color: $color-primary;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    @extend .h3;
+    color: $color-second;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  &__text {
+    color: $color-second;
+    margin-bottom: 30px;
+    line-height: 26px;
+  }
+
+  &__link-action {
+    color: $color-primary;
+    margin-bottom: 17px;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+
+/**
+ * Destaques Mini
+ */
+
+.destaques-mini {
+  @extend .flex;
+  padding: 15px 30px;
+}
+
+$destaques-mini__item_numbers: 10;
+
+$destaques-mini__item_margin-width: 14px;
+$destaques-mini__item_margin-number: $destaques-mini__item_numbers - 1;
+$destaques-mini__item_margin-width-total: $destaques-mini__item_margin-number * $destaques-mini__item_margin-number;
+$destaques-mini__width: 100% - $destaques-mini__item_margin-width-total;
+$destaques-mini__width_item: $destaques-mini__width / $destaques-mini__item_margin-number;
+
+.destaques-mini__item {
+  @extend .box;
+  width: calc((100% / #{$destaques-mini__item_numbers}) - #{$destaques-mini__item_margin-width});
+  margin-right: 7px;
+  margin-left: 7px;
+  background-color: $color-gray-second;
+  padding: 10px;
+  min-height: 120px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
