@@ -6,13 +6,14 @@
 @import "assets/sass/common/headlings";
 @import "assets/sass/common/box";
 
-// Icons
-@import "assets/icon-fontface.css";
-
 // Layout Commom
 @import "assets/sass/common/header";
 @import "assets/sass/common/footer";
 
 // Layout
+@import "assets/sass/layout/login";
 @import "assets/sass/layout/destaques";
 
+
+// Icons
+@import "assets/icon-fontface.css";
