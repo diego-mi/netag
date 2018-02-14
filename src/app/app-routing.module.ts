@@ -62,55 +62,119 @@ const routes: Routes = [
             tbody: [
               {
                 items: [
-                  {text: 'Anna Scherer Milla', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
+                  {
+                    text: 'Anna Scherer Milla',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-green',
+                    textActionClass: 'td-first td-first--text-normal'
+                  },
                   {text: '4'},
                   {text: 'Anna Scherer Milla'},
                   {text: '443.356.789-00'},
                 ],
                 isSeparator: false,
+                actions: [
+                  {
+                    classes: 'icon-edit action-edit table__td_action',
+                    title: 'Editar'
+                  },
+                  {
+                    classes: 'icon-delete action-delete table__td_action',
+                    title: 'Remover'
+                  }
+                ],
               },
               {
                 items: [],
                 isSeparator: true,
+                actions: [],
               },
               {
                 items: [
-                  {text: 'Arysta Lifeschience do Brasil IND QUI. e AGROP. LTDA', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
+                  {
+                    text: 'Arysta Lifeschience do Brasil IND QUI. e AGROP. LTDA',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-green',
+                    textActionClass: 'td-first td-first--text-normal'
+                  },
                   {text: '1'},
                   {text: 'Arysta Lifeschience'},
                   {text: '451.123.444-22'},
                 ],
                 isSeparator: false,
+                actions: [
+                  {
+                    classes: 'icon-edit action-edit table__td_action',
+                    title: 'Editar'
+                  },
+                  {
+                    classes: 'icon-delete action-delete table__td_action',
+                    title: 'Remover'
+                  }
+                ],
               },
               {
                 items: [],
                 isSeparator: true,
+                actions: [],
               },
               {
                 items: [
-                  {text: 'Barf SA', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
+                  {
+                    text: 'Barf SA',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-green',
+                    textActionClass: 'td-first td-first--text-normal'
+                  },
                   {text: '2'},
                   {text: 'Barf SA'},
                   {text: '557.449.265-11'},
                 ],
                 isSeparator: false,
+                actions: [
+                  {
+                    classes: 'icon-edit action-edit table__td_action',
+                    title: 'Editar'
+                  },
+                  {
+                    classes: 'icon-delete action-delete table__td_action',
+                    title: 'Remover'
+                  }
+                ],
               },
               {
                 items: [],
                 isSeparator: true,
+                actions: [],
               },
               {
                 items: [
-                  {text: 'Cargill Agricola S.A.', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
+                  {
+                    text: 'Cargill Agricola S.A.',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-green',
+                    textActionClass: 'td-first td-first--text-normal'
+                  },
                   {text: '5'},
                   {text: 'Cargill Agricola S.A.'},
                   {text: '654.876.913-33'},
                 ],
                 isSeparator: false,
+                actions: [
+                  {
+                    classes: 'icon-edit action-edit table__td_action',
+                    title: 'Editar'
+                  },
+                  {
+                    classes: 'icon-delete action-delete table__td_action',
+                    title: 'Remover'
+                  }
+                ],
               },
               {
                 items: [],
                 isSeparator: true,
+                actions: [],
               },
             ]
           }
@@ -157,59 +221,123 @@ const routes: Routes = [
             tbody: [
               {
                 items: [
-                  {text: 'Anna Scherer Milla', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
+                  {
+                    text: 'Anna Scherer Milla',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-green',
+                    textActionClass: 'td-first td-first--text-normal'
+                  },
                   {text: '443.356.789-00'},
                   {text: 'AG'},
                   {text: ''},
                   {text: ''},
                 ],
                 isSeparator: false,
+                actions: [
+                  {
+                    classes: 'icon-edit action-edit table__td_action',
+                    title: 'Editar'
+                  },
+                  {
+                    classes: 'icon-delete action-delete table__td_action',
+                    title: 'Remover'
+                  }
+                ],
               },
               {
                 items: [],
                 isSeparator: true,
+                actions: [],
               },
               {
                 items: [
-                  {text: 'Arysta Lifeschience do Brasil IND QUI. e AGROP. LTDA', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
+                  {
+                    text: 'Arysta Lifeschience do Brasil IND QUI. e AGROP. LTDA',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-green',
+                    textActionClass: 'td-first td-first--text-normal'
+                  },
                   {text: '451.123.444-22'},
                   {text: 'CD'},
                   {text: 'Arysta Lifeschience'},
                   {text: 'wellida.santos@goldencargo.com.br'},
                 ],
                 isSeparator: false,
+                actions: [
+                  {
+                    classes: 'icon-edit action-edit table__td_action',
+                    title: 'Editar'
+                  },
+                  {
+                    classes: 'icon-delete action-delete table__td_action',
+                    title: 'Remover'
+                  }
+                ],
               },
               {
                 items: [],
                 isSeparator: true,
+                actions: [],
               },
               {
                 items: [
-                  {text: 'Barf SA', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
+                  {
+                    text: 'Barf SA',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-green',
+                    textActionClass: 'td-first td-first--text-normal'
+                  },
                   {text: '557.449.265-11'},
                   {text: 'CD'},
                   {text: 'Barf SA'},
                   {text: 'barfsa@goldencargo.com.br'},
                 ],
                 isSeparator: false,
+                actions: [
+                  {
+                    classes: 'icon-edit action-edit table__td_action',
+                    title: 'Editar'
+                  },
+                  {
+                    classes: 'icon-delete action-delete table__td_action',
+                    title: 'Remover'
+                  }
+                ],
               },
               {
                 items: [],
                 isSeparator: true,
+                actions: [],
               },
               {
                 items: [
-                  {text: 'Cargill Agricola S.A.', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
+                  {
+                    text: 'Cargill Agricola S.A.',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-green',
+                    textActionClass: 'td-first td-first--text-normal'
+                  },
                   {text: '654.876.913-33'},
                   {text: 'CD'},
                   {text: 'Cargill Agricola S.A.'},
                   {text: 'danielli_coelho@cargil.com'},
                 ],
                 isSeparator: false,
+                actions: [
+                  {
+                    classes: 'icon-edit action-edit table__td_action',
+                    title: 'Editar'
+                  },
+                  {
+                    classes: 'icon-delete action-delete table__td_action',
+                    title: 'Remover'
+                  }
+                ],
               },
               {
                 items: [],
                 isSeparator: true,
+                actions: [],
               },
             ]
           }
@@ -266,13 +394,17 @@ const routes: Routes = [
               {text: 'Qnt. Bloq.'},
               {text: 'Qnt. Livre'},
               {text: 'Qnt. Total'},
-              {text: 'Dias para Término AG'},
-              {text: 'Ação'},
+              {text: 'Dias para Término AG'}
             ],
             tbody: [
               {
                 items: [
-                  {text: 'Regular', hasBtnAction: true, btnActionClass: 'td-first--btn-blue', textActionClass: 'td-first td-first--text-blue td-first--text-bold'},
+                  {
+                    text: 'Regular',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-blue',
+                    textActionClass: 'td-first td-first--text-blue td-first--text-bold'
+                  },
                   {text: 'Balsas SP 30'},
                   {text: 'Info Pagador'},
                   {text: '2170/1'},
@@ -288,14 +420,21 @@ const routes: Routes = [
                   {text: '161 dias'},
                 ],
                 isSeparator: false,
+                actions: [],
               },
               {
                 items: [],
                 isSeparator: true,
+                actions: [],
               },
               {
                 items: [
-                  {text: 'Regular', hasBtnAction: true, btnActionClass: 'td-first--btn-yellow', textActionClass: 'td-first td-first--text-yellow td-first--text-bold'},
+                  {
+                    text: 'Regular',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-yellow',
+                    textActionClass: 'td-first td-first--text-yellow td-first--text-bold'
+                  },
                   {text: 'Balsas SP 30'},
                   {text: 'Info Pagador'},
                   {text: '2170/1'},
@@ -311,14 +450,21 @@ const routes: Routes = [
                   {text: '161 dias'},
                 ],
                 isSeparator: false,
+                actions: [],
               },
               {
                 items: [],
                 isSeparator: true,
+                actions: [],
               },
               {
                 items: [
-                  {text: 'Regular', hasBtnAction: true, btnActionClass: 'td-first--btn-red', textActionClass: 'td-first td-first--text-red td-first--text-bold'},
+                  {
+                    text: 'Regular',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-red',
+                    textActionClass: 'td-first td-first--text-red td-first--text-bold'
+                  },
                   {text: 'Balsas SP 30'},
                   {text: 'Info Pagador'},
                   {text: '2170/1'},
@@ -334,10 +480,12 @@ const routes: Routes = [
                   {text: '161 dias'},
                 ],
                 isSeparator: false,
+                actions: [],
               },
               {
                 items: [],
                 isSeparator: true,
+                actions: [],
               },
             ]
           }
