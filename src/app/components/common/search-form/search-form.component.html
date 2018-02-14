@@ -1,9 +1,16 @@
 <section class="search">
   <!--action/info/etc-->
   <div class="search__action">
-    <h2 class="search__action__title">Grupos Cadastrados</h2>
+    <h2 class="search__action__title">{{data.search.searchAction.title}}</h2>
 
-    <a class="search__action__link" href="">criar novo grupo</a>
+    <a class="search__action__link" href="" *ngIf="data.search.searchAction.isLink">
+      <span class="icon-plus-full search__action__link__icon"></span>
+      <span class="search__action__link__text">{{data.search.searchAction.linkText}}</span>
+    </a>
+
+    <p class="search__action__text" *ngIf="!data.search.searchAction.isLink">
+      {{data.search.searchAction.linkText}}
+    </p>
   </div>
   <!--action/info/etc-->
 
@@ -12,13 +19,13 @@
 
     <!--search by free text-->
     <div class="search__form__by-text">
-      <h4 class="search__form__by-text__title">Encontre um grupo</h4>
+      <h4 class="search__form__by-text__title">{{data.search.searchForm.title}}</h4>
       <p class="search__form__by-text__text">
         Use os filtros ou use a lupa para procurar em toda a tabela
       </p>
 
       <div class="form__grouped">
-        <span class="icon-search form__grouped__icon"></span>
+        <span class="icon-search-simple form__grouped__icon"></span>
         <input type="text" class="form__grouped__input-control">
       </div>
     </div>
@@ -34,40 +41,12 @@
       </div>
 
       <div class="search__form__by-inputs__content">
-        <!--input1-->
-        <div class="form__group">
-          <input class="form__group__input" type="text" placeholder="nome do grupo">
+        <!--input-->
+        <div class="form__group" *ngFor="let inputForm of data.search.searchForm.inputs">
+          <input class="form__group__input" type="{{inputForm.type}}" placeholder="{{inputForm.placeholder}}">
           <span class="icon-close-sm form__group__close"></span>
         </div>
-        <!--input1-->
-
-        <!--input2-->
-        <div class="form__group">
-          <input class="form__group__input" type="text" placeholder="empresa principal">
-          <span class="icon-close-sm form__group__close"></span>
-        </div>
-        <!--input2-->
-
-        <!--input3-->
-        <div class="form__group">
-          <input class="form__group__input" type="text" placeholder="cnpj da empresa principal">
-          <span class="icon-close-sm form__group__close"></span>
-        </div>
-        <!--input3-->
-
-        <!--input4-->
-        <div class="form__group">
-          <input class="form__group__input" type="text" placeholder="empresa participante">
-          <span class="icon-close-sm form__group__close"></span>
-        </div>
-        <!--input4-->
-
-        <!--input5-->
-        <div class="form__group">
-          <input class="form__group__input" type="text" placeholder="cnpj empresa participante">
-          <span class="icon-close-sm form__group__close"></span>
-        </div>
-        <!--input5-->
+        <!--input-->
       </div>
     </div>
     <!--search by inputs-->

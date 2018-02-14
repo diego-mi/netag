@@ -1,0 +1,34 @@
+<div class="table-container">
+  <div class="table-container__top-actions"></div>
+
+  <!--table - info list-->
+  <table class="table">
+
+    <thead>
+      <tr>
+        <th *ngFor="let theadItem of data.table.thead">
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          {{theadItem.text}}
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+    <!--tr-->
+    <tr *ngFor="let tbodyRow of data.table.tbody" [ngClass]="{'tr-separator': tbodyRow.isSeparator===true}">
+      <td *ngFor="let tbodyItem of tbodyRow.items; let i = index">
+        <i class="icon-plus-full show-info" *ngIf="i===0"></i>
+        {{tbodyItem.text}}
+      </td>
+      <td *ngIf="!tbodyRow.isSeparator">
+        <i class="icon-edit action-edit table__td_action" title="Editar"></i>
+        <i class="icon-delete action-delete table__td_action" title="Remover"></i>
+      </td>
+    </tr>
+    <!--tr-->
+    </tbody>
+
+  </table>
+  <!--table - info list-->
+
+</div>

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageGroupsComponent } from './page-groups.component';
+import { PageSearchTableComponent } from './page-search-table.component';
 
-describe('PageGroupsComponent', () => {
-  let component: PageGroupsComponent;
-  let fixture: ComponentFixture<PageGroupsComponent>;
+describe('PageSearchTableComponent', () => {
+  let component: PageSearchTableComponent;
+  let fixture: ComponentFixture<PageSearchTableComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PageGroupsComponent ]
+      declarations: [ PageSearchTableComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PageGroupsComponent);
+    fixture = TestBed.createComponent(PageSearchTableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,94 @@
+.table-container {
+  @extend .box;
+  padding: 33px 22px;
+  margin: 0 40px 80px;
+}
+
+.table {
+  width: 100%;
+
+  & > thead {
+
+    & > tr {
+      background-color: $color-primary;
+      height: 50px;
+      border-radius: 10px 10px 0 0;
+
+      & > th {
+        color: #fff;
+        font-weight: bold;
+        font-family: Roboto, sans-serif;
+        line-height: 50px;
+        text-align: left;
+        padding: 0 17px;
+        font-size: 20px;
+        border-left: 1px solid rgba(255, 255, 255, 0.16);
+        cursor: pointer;
+
+        &:first-child {
+          border-left: 0;
+          border-top-left-radius: 12px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 12px;
+        }
+
+        .th-icon-ordenation {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  & > tbody {
+
+    & > tr {
+      background-color: rgba(238, 237, 237, 0.2);
+      height: 51px;
+      border: 1px solid rgba(149, 152, 152, 0.3);
+      width: 100%;
+      margin-bottom: 8px;
+
+      &.tr-separator {
+        background-color: #fff;
+        border: none;
+        height: 10px;
+      }
+
+      & > td {
+        height: 80px;
+        line-height: 78px;
+        padding: 0 20px;
+        color: $color-gray-fifth;
+        font-size: 18px;
+
+        &:first-child {
+          padding-left: 25px;
+          position: relative;
+
+          & .show-info {
+            position: absolute;
+            top: 26px;
+            left: -13px;
+            font-size: 26px;
+            color: $color-fourth;
+            background-color: #fff;
+            cursor: pointer;
+          }
+        }
+
+        & > .table__td_action {
+          margin-right: 40px;
+          color: $color-gray-eighth;
+          font-size: 20px;
+          cursor: pointer;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

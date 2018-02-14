@@ -10,7 +10,8 @@ import { LayoutComponent } from './components/common/layout/layout.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { SearchFormComponent } from './components/common/search-form/search-form.component';
-import { PageGroupsComponent } from './components/pages/page-groups/page-groups.component';
+import { TableComponent } from './components/common/table/table.component';
+import { PageSearchTableComponent } from './components/pages/page-search-table/page-search-table.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { PageGroupsComponent } from './components/pages/page-groups/page-groups.
     HomeComponent,
     LoginComponent,
     SearchFormComponent,
-    PageGroupsComponent
+    TableComponent,
+    PageSearchTableComponent
   ],
   imports: [
     BrowserModule,

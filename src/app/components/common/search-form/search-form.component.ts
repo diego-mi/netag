@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-search-form',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchFormComponent implements OnInit {
 
-  constructor() { }
+  public data: any;
+
+  constructor(private route: ActivatedRoute) {
+    this.data = route.snapshot.data;
+  }
 
   ngOnInit() {
   }
