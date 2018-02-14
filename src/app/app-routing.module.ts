@@ -62,7 +62,7 @@ const routes: Routes = [
             tbody: [
               {
                 items: [
-                  {text: 'Anna Scherer Milla'},
+                  {text: 'Anna Scherer Milla', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
                   {text: '4'},
                   {text: 'Anna Scherer Milla'},
                   {text: '443.356.789-00'},
@@ -75,7 +75,7 @@ const routes: Routes = [
               },
               {
                 items: [
-                  {text: 'Arysta Lifeschience do Brasil IND QUI. e AGROP. LTDA'},
+                  {text: 'Arysta Lifeschience do Brasil IND QUI. e AGROP. LTDA', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
                   {text: '1'},
                   {text: 'Arysta Lifeschience'},
                   {text: '451.123.444-22'},
@@ -88,7 +88,7 @@ const routes: Routes = [
               },
               {
                 items: [
-                  {text: 'Barf SA'},
+                  {text: 'Barf SA', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
                   {text: '2'},
                   {text: 'Barf SA'},
                   {text: '557.449.265-11'},
@@ -101,7 +101,7 @@ const routes: Routes = [
               },
               {
                 items: [
-                  {text: 'Cargill Agricola S.A.'},
+                  {text: 'Cargill Agricola S.A.', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
                   {text: '5'},
                   {text: 'Cargill Agricola S.A.'},
                   {text: '654.876.913-33'},
@@ -157,7 +157,7 @@ const routes: Routes = [
             tbody: [
               {
                 items: [
-                  {text: 'Anna Scherer Milla'},
+                  {text: 'Anna Scherer Milla', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
                   {text: '443.356.789-00'},
                   {text: 'AG'},
                   {text: ''},
@@ -171,7 +171,7 @@ const routes: Routes = [
               },
               {
                 items: [
-                  {text: 'Arysta Lifeschience do Brasil IND QUI. e AGROP. LTDA'},
+                  {text: 'Arysta Lifeschience do Brasil IND QUI. e AGROP. LTDA', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
                   {text: '451.123.444-22'},
                   {text: 'CD'},
                   {text: 'Arysta Lifeschience'},
@@ -185,7 +185,7 @@ const routes: Routes = [
               },
               {
                 items: [
-                  {text: 'Barf SA'},
+                  {text: 'Barf SA', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
                   {text: '557.449.265-11'},
                   {text: 'CD'},
                   {text: 'Barf SA'},
@@ -199,11 +199,139 @@ const routes: Routes = [
               },
               {
                 items: [
-                  {text: 'Cargill Agricola S.A.'},
+                  {text: 'Cargill Agricola S.A.', hasBtnAction: true, btnActionClass: 'td-first--btn-green', textActionClass: 'td-first td-first--text-normal'},
                   {text: '654.876.913-33'},
                   {text: 'CD'},
                   {text: 'Cargill Agricola S.A.'},
                   {text: 'danielli_coelho@cargil.com'},
+                ],
+                isSeparator: false,
+              },
+              {
+                items: [],
+                isSeparator: true,
+              },
+            ]
+          }
+        }
+      },
+      {
+        path: 'estoque',
+        component: PageSearchTableComponent,
+        data: {
+          search: {
+            searchAction: {
+              title: 'Consulta de Estoque',
+              isLink: false,
+              linkText: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
+            },
+            searchForm: {
+              title: 'Buscando algo específico?',
+              inputs: [
+                {
+                  placeholder: 'cnpj',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'entrada',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'código',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'produto',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'lote',
+                  type: 'text'
+                }
+              ]
+            }
+          },
+          table: {
+            thead: [
+              {text: 'Status'},
+              {text: 'Filial & Código'},
+              {text: 'Nome & Pagador'},
+              {text: 'Nota Definitiva'},
+              {text: 'Valor Total NF'},
+              {text: 'Código Produto'},
+              {text: 'Descrição Produto'},
+              {text: 'Lote'},
+              {text: 'Data Validade'},
+              {text: 'Status Venc'},
+              {text: 'Qnt. Bloq.'},
+              {text: 'Qnt. Livre'},
+              {text: 'Qnt. Total'},
+              {text: 'Dias para Término AG'},
+              {text: 'Ação'},
+            ],
+            tbody: [
+              {
+                items: [
+                  {text: 'Regular', hasBtnAction: true, btnActionClass: 'td-first--btn-blue', textActionClass: 'td-first td-first--text-blue td-first--text-bold'},
+                  {text: 'Balsas SP 30'},
+                  {text: 'Info Pagador'},
+                  {text: '2170/1'},
+                  {text: 'R$ 0.000,00'},
+                  {text: '00000'},
+                  {text: 'Descrição do produto'},
+                  {text: '00000'},
+                  {text: '00/00/0000'},
+                  {text: 'info'},
+                  {text: 'info'},
+                  {text: 'info'},
+                  {text: 'info'},
+                  {text: '161 dias'},
+                ],
+                isSeparator: false,
+              },
+              {
+                items: [],
+                isSeparator: true,
+              },
+              {
+                items: [
+                  {text: 'Regular', hasBtnAction: true, btnActionClass: 'td-first--btn-yellow', textActionClass: 'td-first td-first--text-yellow td-first--text-bold'},
+                  {text: 'Balsas SP 30'},
+                  {text: 'Info Pagador'},
+                  {text: '2170/1'},
+                  {text: 'R$ 0.000,00'},
+                  {text: '00000'},
+                  {text: 'Descrição do produto'},
+                  {text: '00000'},
+                  {text: '00/00/0000'},
+                  {text: 'info'},
+                  {text: 'info'},
+                  {text: 'info'},
+                  {text: 'info'},
+                  {text: '161 dias'},
+                ],
+                isSeparator: false,
+              },
+              {
+                items: [],
+                isSeparator: true,
+              },
+              {
+                items: [
+                  {text: 'Regular', hasBtnAction: true, btnActionClass: 'td-first--btn-red', textActionClass: 'td-first td-first--text-red td-first--text-bold'},
+                  {text: 'Balsas SP 30'},
+                  {text: 'Info Pagador'},
+                  {text: '2170/1'},
+                  {text: 'R$ 0.000,00'},
+                  {text: '00000'},
+                  {text: 'Descrição do produto'},
+                  {text: '00000'},
+                  {text: '00/00/0000'},
+                  {text: 'info'},
+                  {text: 'info'},
+                  {text: 'info'},
+                  {text: 'info'},
+                  {text: '161 dias'},
                 ],
                 isSeparator: false,
               },
@@ -249,7 +377,6 @@ const routes: Routes = [
     ]
   }
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

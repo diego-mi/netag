@@ -16,8 +16,8 @@
     <tbody>
     <!--tr-->
     <tr *ngFor="let tbodyRow of data.table.tbody" [ngClass]="{'tr-separator': tbodyRow.isSeparator===true}">
-      <td *ngFor="let tbodyItem of tbodyRow.items; let i = index">
-        <i class="icon-plus-full show-info" *ngIf="i===0"></i>
+      <td *ngFor="let tbodyItem of tbodyRow.items; let i = index" class="{{getFirstColumTextClass(tbodyItem, i)}}">
+        <i *ngIf="i===0 && tbodyItem.hasBtnAction" class="icon-plus-full show-info {{getFirstColumBtnClass(tbodyItem, i)}}"></i>
         {{tbodyItem.text}}
       </td>
       <td *ngIf="!tbodyRow.isSeparator">

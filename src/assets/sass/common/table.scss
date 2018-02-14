@@ -63,17 +63,51 @@
         color: $color-gray-fifth;
         font-size: 18px;
 
-        &:first-child {
+        &.td-first {
           padding-left: 25px;
           position: relative;
 
-          & .show-info {
+          &--text-normal {
+          }
+
+          &--text-bold {
+            font-weight: bold;
+          }
+
+          &--text-blue {
+            color: $color-fifth;
+          }
+
+          &--text-yellow {
+            color: $color-sixth;
+          }
+
+          &--text-red {
+            color: $color-eighth;
+          }
+
+          // BTN Styles
+          & .td-first--btn-green {
+            color: $color-fourth;
+          }
+
+          & .td-first--btn-blue {
+            color: $color-fifth;
+          }
+
+          & .td-first--btn-yellow {
+            color: $color-sixth;
+          }
+
+          & .td-first--btn-red {
+            color: $color-eighth;
+          }
+
+          & i.show-info {
             position: absolute;
             top: 26px;
             left: -13px;
             font-size: 26px;
-            color: $color-fourth;
-            background-color: #fff;
             cursor: pointer;
           }
         }
