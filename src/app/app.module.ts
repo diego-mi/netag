@@ -9,6 +9,8 @@ import { FooterComponent } from './components/common/footer/footer.component';
 import { LayoutComponent } from './components/common/layout/layout.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { LoginComponent } from './components/pages/login/login.component';
+import { SearchFormComponent } from './components/common/search-form/search-form.component';
+import { PageGroupsComponent } from './components/pages/page-groups/page-groups.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { LoginComponent } from './components/pages/login/login.component';
     FooterComponent,
     LayoutComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    SearchFormComponent,
+    PageGroupsComponent
   ],
   imports: [
     BrowserModule,

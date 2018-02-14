@@ -3,6 +3,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {LayoutComponent} from './components/common/layout/layout.component';
 import {HomeComponent} from './components/pages/home/home.component';
 import {LoginComponent} from './components/pages/login/login.component';
+import {PageGroupsComponent} from './components/pages/page-groups/page-groups.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
       {
         path: '',
         component: HomeComponent
+      },
+      {
+        path: 'grupos',
+        component: PageGroupsComponent
       }
     ]
   }
