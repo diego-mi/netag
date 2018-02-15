@@ -5,6 +5,7 @@ $header-height-without-border: $header-height - $header-height-border-height;
 .header {
   height: $header-height;
   border-bottom: $header-height-border-height solid $color-primary;
+  margin-bottom: 50px;
 
   .container {
     @extend .flex;
@@ -30,6 +31,11 @@ $header-height-without-border: $header-height - $header-height-border-height;
 .header__nav {
   height: $header-height-without-border;
   flex: 2;
+
+  &--center {
+    flex: auto;
+    width: 150px;
+  }
 }
 
 .header__nav__list {
@@ -73,8 +79,9 @@ $header-height-without-border: $header-height - $header-height-border-height;
     }
 
     &--meu-netag {
-      flex: 0.7;
       background-color: $color-third;
+      height: $header-height-without-border;
+      flex: 1;
 
       & a {
         color: #fff;
@@ -83,6 +90,39 @@ $header-height-without-border: $header-height - $header-height-border-height;
         font-size: 20px;
       }
     }
+  }
+}
+
+// LOGO CENTRAL
+.header__logo-central {
+  background-color: $color-third;
+  padding: 0 45px;
+
+  &__link {
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    height: $header-height-without-border;
+    line-height: $header-height-without-border;
+    font-family: Roboto, sans-serif;
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: -51px;
+    width: 76px;
+    height: 76px;
+    margin-left: -38px;
+    left: 50%;
+  }
+
+  &__text {
+
   }
 }
 
