@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?b3jkt4');
-  src:  url('fonts/icomoon.eot?b3jkt4#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?b3jkt4') format('truetype'),
-    url('fonts/icomoon.woff?b3jkt4') format('woff'),
-    url('fonts/icomoon.svg?b3jkt4#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?u935ym');
+  src:  url('fonts/icomoon.eot?u935ym#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?u935ym') format('truetype'),
+    url('fonts/icomoon.woff?u935ym') format('woff'),
+    url('fonts/icomoon.svg?u935ym#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-empresas:before {
+  content: "\e91e";
+  color: #676668;
+}
+.icon-filiais:before {
+  content: "\e91f";
+  color: #676668;
+}
+.icon-grupos:before {
+  content: "\e920";
+  color: #676668;
+}
 .icon-meu-netag .path1:before {
   content: "\e918";
   color: rgb(255, 255, 255);

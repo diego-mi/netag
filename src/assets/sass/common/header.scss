@@ -48,6 +48,14 @@ $header-height-without-border: $header-height - $header-height-border-height;
     flex: 1;
     border-right: 1px solid $color-gray-primary;
 
+    &.active *{
+      color: $color-primary;
+    }
+
+    &.active i:before {
+      color: $color-primary;
+    }
+
     &:last-child {
       border-right: 0;
     }
