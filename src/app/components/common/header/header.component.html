@@ -1,46 +1,100 @@
+<!--
+
+ -> Como usar o submenu
+
+ O js header.js ira alternar a classe .header--submenu-opened do .header
+ e
+ O js header.js ira alternar a classe .header__nav__list--submenu-opened do .header__nav__list
+ com isso
+ o submenu ira ser mostrado ou escondido.
+
+ Porem, havera casos onde o submenu esta sendo mostrado pois esta na pagina de um item do submenu
+ entao este deve ser mostrado de qualquer jeito.
+
+ Nesses casos será necessario adicionar a classe header--submenu-active no .header
+ e
+ será necessario adicionar a classe .header__nav__list--submenu-active no .header__nav__list que possuir o submenu item ativo
+
+-->
+
 <!-- Header -->
-<header class="header">
+<header class="header header--submenu-active">
+
+  <!--div para criar a faixa de backgroud do submenu-->
+  <div class="header-submenu-enfeite"></div>
+  <!--div para criar a faixa de backgroud do submenu-->
+
   <div class="container">
     <div class="header__logo">
-      <img class="header__logo__img" src="../../../../assets/img/header/netag_logo_header.png" alt="netAg">
+      <img class="header__logo__img" src="https://diego-mi.github.io/netag/assets/img/header/netag_logo_header.png"
+           alt="netAg">
     </div>
 
     <!--Navegacao - Esquerda-->
     <nav class="header__nav header__nav--left">
       <!--LIST-->
-      <ul class="header__nav__list">
+      <ul class="header__nav__list header__nav__list--submenu-active">
         <!--MENU ITEM-->
-        <li class="header__nav__list__item header__nav__list__item--cadastros" [ngClass]="{active: activeRoute('cadastros')}">
+        <li class="header__nav__list__item header__nav__list__item--cadastros"
+            [ngClass]="{active: activeRoute('cadastros')}">
           <a [routerLink]="['/master/empresas']">
             <i class="header__nav__list__item__icon icon-cadastro"></i>
             <span class="header__nav__list__item__text">Cadastros</span>
           </a>
+          <!--SUBMENU LIST-->
+          <ul class="header__nav__sublist">
+            <!--SUBMENU ITEM-->
+            <li class="header__nav__sublist__item" [ngClass]="{active: activeRoute('empresas')}">
+              <a [routerLink]="['/master/empresas']">
+                <i class="header__nav__list__item__icon icon-empresas"></i>
+                <span class="header__nav__list__item__text">Empresas</span>
+              </a>
+            </li>
+            <!--SUBMENU ITEM-->
+            <!--SUBMENU ITEM-->
+            <li class="header__nav__sublist__item" [ngClass]="{active: activeRoute('grupos')}">
+              <a [routerLink]="['/master/grupos']">
+                <i class="header__nav__list__item__icon icon-grupos"></i>
+                <span class="header__nav__list__item__text">Grupos</span>
+              </a>
+            </li>
+            <!--SUBMENU ITEM-->
+            <!--SUBMENU ITEM-->
+            <li class="header__nav__sublist__item" [ngClass]="{active: activeRoute('filiais')}">
+              <a [routerLink]="['/master/filiais']">
+                <i class="header__nav__list__item__icon icon-filiais"></i>
+                <span class="header__nav__list__item__text">Filiais</span>
+              </a>
+            </li>
+            <!--SUBMENU ITEM-->
+          </ul>
+          <!--SUBMENU LIST-->
         </li>
         <!--MENU ITEM-->
         <!--MENU ITEM-->
-        <li class="header__nav__list__item header__nav__list__item--cadastros" [ngClass]="{active: activeRoute('empresas')}">
-          <a [routerLink]="['/master/empresas']">
-            <i class="header__nav__list__item__icon icon-empresas"></i>
-            <span class="header__nav__list__item__text">Empresas</span>
-          </a>
-        </li>
-        <!--MENU ITEM-->
-        <!--MENU ITEM-->
-        <li class="header__nav__list__item header__nav__list__item--cadastros" [ngClass]="{active: activeRoute('grupos')}">
-          <a [routerLink]="['/master/grupos']">
-            <i class="header__nav__list__item__icon icon-grupos"></i>
-            <span class="header__nav__list__item__text">Grupos</span>
-          </a>
-        </li>
-        <!--MENU ITEM-->
-        <!--MENU ITEM-->
-        <li class="header__nav__list__item header__nav__list__item--cadastros" [ngClass]="{active: activeRoute('filiais')}">
-          <a [routerLink]="['/master/filiais']">
-            <i class="header__nav__list__item__icon icon-filiais"></i>
-            <span class="header__nav__list__item__text">Filiais</span>
-          </a>
-        </li>
-        <!--MENU ITEM-->
+        <!--<li class="header__nav__list__item header__nav__list__item&#45;&#45;cadastros" [ngClass]="{active: activeRoute('empresas')}">-->
+        <!--<a [routerLink]="['/master/empresas']">-->
+        <!--<i class="header__nav__list__item__icon icon-empresas"></i>-->
+        <!--<span class="header__nav__list__item__text">Empresas</span>-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--&lt;!&ndash;MENU ITEM&ndash;&gt;-->
+        <!--&lt;!&ndash;MENU ITEM&ndash;&gt;-->
+        <!--<li class="header__nav__list__item header__nav__list__item&#45;&#45;cadastros" [ngClass]="{active: activeRoute('grupos')}">-->
+        <!--<a [routerLink]="['/master/grupos']">-->
+        <!--<i class="header__nav__list__item__icon icon-grupos"></i>-->
+        <!--<span class="header__nav__list__item__text">Grupos</span>-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--&lt;!&ndash;MENU ITEM&ndash;&gt;-->
+        <!--&lt;!&ndash;MENU ITEM&ndash;&gt;-->
+        <!--<li class="header__nav__list__item header__nav__list__item&#45;&#45;cadastros" [ngClass]="{active: activeRoute('filiais')}">-->
+        <!--<a [routerLink]="['/master/filiais']">-->
+        <!--<i class="header__nav__list__item__icon icon-filiais"></i>-->
+        <!--<span class="header__nav__list__item__text">Filiais</span>-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--&lt;!&ndash;MENU ITEM&ndash;&gt;-->
       </ul>
       <!--LIST-->
     </nav>
@@ -49,7 +103,8 @@
     <!--Logo Central-->
     <div class="header__logo-central">
       <a class="header__logo-central__link" href="">
-        <img class="header__logo-central__icon" src="./../../../../assets/img/header/meu-netag-logo-central.png">
+        <img class="header__logo-central__icon"
+             src="https://diego-mi.github.io/netag/assets/img/header/meu-netag-logo-central.png">
         <span class="header__logo-central__text">Meu Netag</span>
       </a>
     </div>
@@ -60,20 +115,57 @@
       <!--LIST-->
       <ul class="header__nav__list">
         <!--MENU ITEM-->
-        <li class="header__nav__list__item header__nav__list__item--consultas" [ngClass]="{active: activeRoute('consultas')}">
+        <li class="header__nav__list__item header__nav__list__item--consultas"
+            [ngClass]="{active: activeRoute('consultas')}">
           <a href="">
             <i class="header__nav__list__item__icon icon-search"></i>
             <span class="header__nav__list__item__text">Consultas</span>
           </a>
+          <!--SUBMENU LIST-->
+          <ul class="header__nav__sublist">
+            <!--SUBMENU ITEM-->
+            <li class="header__nav__sublist__item" [ngClass]="{active: activeRoute('empresas')}">
+              <a [routerLink]="['/master/empresas']">
+                <i class="header__nav__list__item__icon icon-empresas"></i>
+                <span class="header__nav__list__item__text">Empresas</span>
+              </a>
+            </li>
+            <!--SUBMENU ITEM-->
+            <!--SUBMENU ITEM-->
+            <li class="header__nav__sublist__item" [ngClass]="{active: activeRoute('grupos')}">
+              <a [routerLink]="['/master/grupos']">
+                <i class="header__nav__list__item__icon icon-grupos"></i>
+                <span class="header__nav__list__item__text">Grupos</span>
+              </a>
+            </li>
+            <!--SUBMENU ITEM-->
+            <!--SUBMENU ITEM-->
+            <li class="header__nav__sublist__item" [ngClass]="{active: activeRoute('filiais')}">
+              <a [routerLink]="['/master/filiais']">
+                <i class="header__nav__list__item__icon icon-filiais"></i>
+                <span class="header__nav__list__item__text">Filiais</span>
+              </a>
+            </li>
+            <!--SUBMENU ITEM-->
+          </ul>
+          <!--SUBMENU LIST-->
         </li>
         <!--MENU ITEM-->
         <!--MENU ITEM-->
-        <li class="header__nav__list__item header__nav__list__item--consultas" [ngClass]="{active: activeRoute('estoque')}">
-          <a [routerLink]="['/master/estoque']">
-            <i class="header__nav__list__item__icon icon-estoque"></i>
-            <span class="header__nav__list__item__text">Estoque</span>
-          </a>
-        </li>
+        <!--<li class="header__nav__list__item header__nav__list__item&#45;&#45;consultas" [ngClass]="{active: activeRoute('estoque')}">-->
+        <!--<a [routerLink]="['/master/estoque']">-->
+        <!--<i class="header__nav__list__item__icon icon-estoque"></i>-->
+        <!--<span class="header__nav__list__item__text">Estoque</span>-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--&lt;!&ndash;MENU ITEM&ndash;&gt;-->
+        <!--&lt;!&ndash;MENU ITEM&ndash;&gt;-->
+        <!--<li class="header__nav__list__item header__nav__list__item&#45;&#45;consultas" [ngClass]="{active: activeRoute('recebimento')}">-->
+        <!--<a [routerLink]="['/master/recebimento']">-->
+        <!--<i class="header__nav__list__item__icon icon-recebimento"></i>-->
+        <!--<span class="header__nav__list__item__text">Recebimento</span>-->
+        <!--</a>-->
+        <!--</li>-->
         <!--MENU ITEM-->
       </ul>
       <!--LIST-->

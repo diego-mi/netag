@@ -6,6 +6,15 @@ $header-height-without-border: $header-height - $header-height-border-height;
   height: $header-height;
   border-bottom: $header-height-border-height solid $color-primary;
   margin-bottom: 50px;
+  position: relative;
+
+  &--submenu-opened {
+    margin-bottom: $header-height;
+  }
+
+  &--submenu-active {
+    margin-bottom: $header-height;
+  }
 
   .container {
     @extend .flex;
@@ -28,6 +37,20 @@ $header-height-without-border: $header-height - $header-height-border-height;
 }
 // Header Logo
 
+.header-submenu-enfeite {
+  position: absolute;
+  top: $header-height;
+  left: 0;
+  right: 0;
+  height: $header-height;
+  background-color: $color-gray-third;
+  display: none;
+}
+
+.header--submenu-opened .header-submenu-enfeite, .header--submenu-active .header-submenu-enfeite {
+  display: block;
+}
+
 .header__nav {
   height: $header-height-without-border;
   flex: 2;
@@ -41,6 +64,7 @@ $header-height-without-border: $header-height - $header-height-border-height;
 .header__nav__list {
   @extend .flex;
   height: $header-height-without-border;
+  position: relative;
 
   &__item {
     height: $header-height-without-border;
@@ -60,7 +84,7 @@ $header-height-without-border: $header-height - $header-height-border-height;
       border-right: 0;
     }
 
-    & a {
+    & > a {
       height: $header-height-without-border;
       line-height: $header-height-without-border;
       font-family: Roboto, sans-serif;
@@ -70,20 +94,89 @@ $header-height-without-border: $header-height - $header-height-border-height;
       color: $color-gray-fourth;
     }
 
-    & a i:before {
+    & > a i:before {
       font-size: 30px;
       height: 30px;
       vertical-align: middle;
       margin-right: 7px;
     }
 
-    &--cadastros {
+    &--meu-netag {
+      background-color: $color-third;
+      height: $header-height-without-border;
+      flex: 1;
+
+      & a {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+      }
     }
-    &--consultas {
+  }
+}
+
+.header__nav__list--submenu-opened .header__nav__sublist, .header__nav__list--submenu-active .header__nav__sublist {
+  @extend .flex;
+}
+
+.header__nav__sublist {
+  display: none;
+  height: $header-height-without-border;
+  position: absolute;
+  top: $header-height;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  transition: display 3s;
+
+
+  &__item {
+    height: $header-height-without-border;
+    background-color: $color-gray-third;
+    flex: 1;
+    border-right: 1px solid $color-gray-primary;
+
+    &.active *{
+      color: $color-primary;
     }
-    &--relatorios {
+
+    &.active i:before {
+      color: $color-primary;
     }
-    &--solicitacoes {
+
+    &:hover *{
+      color: $color-primary;
+    }
+
+    &:hover i:before {
+      color: $color-primary;
+    }
+
+    &:first-child {
+      border-left: 1px solid $color-gray-primary;
+    }
+
+    & > a {
+      height: $header-height-without-border;
+      line-height: $header-height-without-border;
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      display: block;
+      text-align: center;
+      color: $color-gray-fourth;
+
+      & span {
+        transition: all .3s;
+      }
+    }
+
+    & > a i:before {
+      font-size: 30px;
+      height: 30px;
+      vertical-align: middle;
+      margin-right: 7px;
+      transition: all .3s;
     }
 
     &--meu-netag {

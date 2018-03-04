@@ -521,6 +521,168 @@ const routes: Routes = [
           },
           table: {}
         }
+      },
+      {
+        path: 'recebimento',
+        component: PageSearchTableComponent,
+        data: {
+          search: {
+            searchAction: {
+              title: 'Consulta de Recebimentos',
+              isLink: false,
+              linkText: 'Lorem ipsum dolor sit \n' +
+              'amet, consectetuer \n' +
+              'adipiscing elit.'
+            },
+            searchForm: {
+              title: 'Buscando algo específico?',
+              inputs: [
+                {
+                  placeholder: 'cnpj',
+                  type: 'text'
+                }, {
+                  placeholder: 'nota fiscal',
+                  type: 'text'
+                }, {
+                  placeholder: 'código',
+                  type: 'text'
+                }, {
+                  placeholder: 'lote',
+                  type: 'text'
+                }, {
+                  placeholder: 'produto',
+                  type: 'text'
+                }, {
+                  placeholder: 'data entrada',
+                  type: 'text'
+                }, {
+                  placeholder: 'data conclusão',
+                  type: 'text'
+                }
+              ]
+            }
+          },
+          table: {
+            thead: [
+              {text: 'Filial & Código'},
+              {text: 'Nome & CNPJ do pagador'},
+              {text: 'Nota Origem'},
+              {text: 'Qnt. Itens'},
+              {text: 'Peso NF'},
+              {text: 'Valor NF'},
+              {text: 'Recebido em'},
+              {text: 'Conferido em'},
+              {text: 'Conclusão em'},
+              {text: 'Nome Transportadora'},
+            ],
+            tbody: [
+              {
+                items: [
+                  {
+                    text: 'Balsas - SP 30',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-green',
+                    textActionClass: 'td-first td-first--text-normal'
+                  },
+                  {text: 'Anna Scherer Milla CPF 123.456.789-00'},
+                  {text: '2170/1'},
+                  {text: '500'},
+                  {text: '100 kg'},
+                  {text: 'R$ 0.000,00'},
+                  {text: '02/01/18'},
+                  {text: '02/01/18'},
+                  {text: '02/01/18'},
+                  {text: 'Golden Cargo'}
+                ],
+                isSeparator: false,
+                actions: [],
+              },
+              {
+                items: [],
+                isSeparator: true,
+                actions: [],
+              },
+              {
+                items: [
+                  {
+                    text: 'Balsas - SP 30',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-green',
+                    textActionClass: 'td-first td-first--text-normal'
+                  },
+                  {text: 'Anna Scherer Milla CPF 123.456.789-00'},
+                  {text: '2170/1'},
+                  {text: '500'},
+                  {text: '100 kg'},
+                  {text: 'R$ 0.000,00'},
+                  {text: '02/01/18'},
+                  {text: '02/01/18'},
+                  {text: '02/01/18'},
+                  {text: 'Golden Cargo'}
+                ],
+                isSeparator: false,
+                actions: [],
+              },
+              {
+                items: [],
+                isSeparator: true,
+                actions: [],
+              },
+              {
+                items: [
+                  {
+                    text: 'Balsas - SP 30',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-green',
+                    textActionClass: 'td-first td-first--text-normal'
+                  },
+                  {text: 'Anna Scherer Milla CPF 123.456.789-00'},
+                  {text: '2170/1'},
+                  {text: '500'},
+                  {text: '100 kg'},
+                  {text: 'R$ 0.000,00'},
+                  {text: '02/01/18'},
+                  {text: '02/01/18'},
+                  {text: '02/01/18'},
+                  {text: 'Golden Cargo'}
+                ],
+                isSeparator: false,
+                actions: [],
+              },
+              {
+                items: [],
+                isSeparator: true,
+                actions: [],
+              },
+              {
+                items: [
+                  {
+                    text: 'Balsas - SP 30',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-green',
+                    textActionClass: 'td-first td-first--text-normal'
+                  },
+                  {text: 'Anna Scherer Milla CPF 123.456.789-00'},
+                  {text: '2170/1'},
+                  {text: '500'},
+                  {text: '100 kg'},
+                  {text: 'R$ 0.000,00'},
+                  {text: '02/01/18'},
+                  {text: '02/01/18'},
+                  {text: '02/01/18'},
+                  {text: 'Golden Cargo'}
+                ],
+                isSeparator: false,
+                actions: [],
+              },
+              {
+                items: [],
+                isSeparator: true,
+                actions: [],
+              }
+            ]
+          }
+        }
       }
     ]
   }
@@ -532,3 +694,12 @@ const routes: Routes = [
 })
 export class AppRoutingModule {
 }
+
+
+
+
+
+
+
+
+
