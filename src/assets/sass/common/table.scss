@@ -2,6 +2,48 @@
   @extend .box;
   padding: 33px 22px;
   margin: 0 40px 80px;
+  position: relative;
+}
+
+.table-container__top-actions {
+  position: absolute;
+  top: -18px;
+  @extend .flex;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  padding: 0 22px;
+  height: 46px;
+
+  &__list {
+    @extend .flex;
+
+    & > li {
+      background-color: $color-primary;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      color: #fff;
+      margin: 0 5px;
+      line-height: 36px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    &--center {
+      & > li:before {
+        font-size: 12px;
+        vertical-align: bottom;
+      }
+    }
+
+    &--right {
+      & > li:before {
+        font-size: 10px;
+      }
+    }
+  }
+
 }
 
 .table {
@@ -109,6 +151,10 @@
             left: -13px;
             font-size: 26px;
             cursor: pointer;
+
+            &:before {
+              background-color: #fff;
+            }
           }
         }
 

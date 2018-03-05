@@ -115,6 +115,22 @@
               </a>
             </li>
             <!--SUBMENU ITEM-->
+            <!--SUBMENU ITEM-->
+            <li class="header__nav__sublist__item" [ngClass]="{active: activeRoute('expedicao')}">
+              <a [routerLink]="['/master/expedicao']">
+                <i class="header__nav__list__item__icon icon-recebimento"></i>
+                <span class="header__nav__list__item__text">Expedição</span>
+              </a>
+            </li>
+            <!--SUBMENU ITEM-->
+            <!--SUBMENU ITEM-->
+            <li class="header__nav__sublist__item" [ngClass]="{active: activeRoute('entrega')}">
+              <a [routerLink]="['/master/entrega']">
+                <i class="header__nav__list__item__icon icon-entrega"></i>
+                <span class="header__nav__list__item__text">Entrega</span>
+              </a>
+            </li>
+            <!--SUBMENU ITEM-->
           </ul>
           <!--SUBMENU LIST-->
         </li>
