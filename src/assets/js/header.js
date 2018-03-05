@@ -3,9 +3,8 @@
  */
 
 var HeaderClasses = {
-  headerClass: 'header',
+  headerClass: '.header',
   headerSubmenuOpenedClass: 'header--submenu-opened',
-  headerNavListClass: 'header__nav__list',
   headerNavListOpenedClass: 'header__nav__list--submenu-opened'
 };
 
@@ -14,44 +13,14 @@ var HeaderToggleSubmenu = {
     event.preventDefault();
 
     if ($(this).parent().hasClass(HeaderClasses.headerNavListOpenedClass)) {
-      HeaderCloseSubmenu.closeHeaderSubmenu($(this));
+      $(HeaderClasses.headerClass).removeClass(HeaderClasses.headerSubmenuOpenedClass);
+      $(this).parent().removeClass(HeaderClasses.headerNavListOpenedClass);
     } else {
-      HeaderOpenSubmenu.openHeaderSubmenu($(this));
+      $(HeaderClasses.headerClass).addClass(HeaderClasses.headerSubmenuOpenedClass);
+      $(this).parent().addClass(HeaderClasses.headerNavListOpenedClass);
     }
   }
 };
 
-
-var HeaderOpenSubmenu = {
-  headerNavListToOpen: '',
-  openHeaderSubmenu: function (headerNavListItemClicked) {
-    event.preventDefault();
-
-    HeaderOpenSubmenu.addClassSubmenuOpenedToHeader();
-    HeaderOpenSubmenu.addClassSubmenuOpenedToHeaderNavList(headerNavListItemClicked);
-  },
-  addClassSubmenuOpenedToHeader: function () {
-    $('.' + HeaderClasses.headerClass).addClass(HeaderClasses.headerSubmenuOpenedClass);
-  },
-  addClassSubmenuOpenedToHeaderNavList: function (headerNavListItemClicked) {
-    headerNavListItemClicked.parent().addClass(HeaderClasses.headerNavListOpenedClass);
-  }
-};
-
-var HeaderCloseSubmenu = {
-  headerNavListToClose: '',
-  closeHeaderSubmenu: function (headerNavListItemClicked) {
-
-    HeaderCloseSubmenu.removeClassSubmenuOpenedToHeader();
-    HeaderCloseSubmenu.removeClassSubmenuOpenedToHeaderNavList(headerNavListItemClicked);
-  },
-  removeClassSubmenuOpenedToHeader: function () {
-    console.info(HeaderClasses.headerClass);
-    $('.' + HeaderClasses.headerClass).removeClass(HeaderClasses.headerSubmenuOpenedClass);
-  },
-  removeClassSubmenuOpenedToHeaderNavList: function (headerNavListItemClicked) {
-    headerNavListItemClicked.parent().removeClass(HeaderClasses.headerNavListOpenedClass);
-  }
-};
 
 $('.header__nav__list__item').on('click', HeaderToggleSubmenu.toggleSubmenu);
