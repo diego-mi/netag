@@ -7,7 +7,7 @@
 
 .table-container__top-actions {
   position: absolute;
-  top: -18px;
+  top: -19px;
   @extend .flex;
   justify-content: space-between;
   left: 0;
@@ -18,29 +18,49 @@
   &__list {
     @extend .flex;
 
-    & > li {
+    & > .table__action_top_btn {
+      padding: 0 3px;
+      margin: 0 3px;
+      background: #fff;
+    }
+
+    & .table__action_top_btn__icon {
       background-color: $color-primary;
       width: 36px;
+      display: block;
       height: 36px;
       border-radius: 10px;
       color: #fff;
-      margin: 0 5px;
       line-height: 36px;
       text-align: center;
       cursor: pointer;
+
+      &:active {
+        margin-top: 1px;
+      }
+
+      &:hover {
+        box-shadow: inset 0px 0px 5px rgba(255,255,255,.5);
+      }
     }
 
     &--center {
-      & > li:before {
+      & .table__action_top_btn__icon:before {
         font-size: 12px;
         vertical-align: bottom;
       }
     }
 
     &--right {
-      & > li:before {
+      & .table__action_top_btn__icon:before {
         font-size: 10px;
       }
+
+      & .table__action_top_btn__icon.icon-config:before {
+        font-size: 18px;
+      }
+
+
     }
   }
 

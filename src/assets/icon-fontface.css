@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?u935ym');
-  src:  url('fonts/icomoon.eot?u935ym#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?u935ym') format('truetype'),
-    url('fonts/icomoon.woff?u935ym') format('woff'),
-    url('fonts/icomoon.svg?u935ym#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?2rcaui');
+  src:  url('fonts/icomoon.eot?2rcaui#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2rcaui') format('truetype'),
+    url('fonts/icomoon.woff?2rcaui') format('woff'),
+    url('fonts/icomoon.svg?2rcaui#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-config:before {
+  content: "\e921";
+  color: #fff;
+}
 .icon-empresas:before {
   content: "\e91e";
   color: #676668;
