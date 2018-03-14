@@ -14,69 +14,62 @@
   right: 0;
   padding: 0 22px;
   height: 46px;
-
   &__list {
     @extend .flex;
-
-    & > .table__action_top_btn {
+    &--center {
+      & .list-action__btn__icon:before {
+        font-size: 12px;
+      }
+    }
+    &--right {
+      & .list-action__btn__icon:before {
+        font-size: 10px;
+      }
+      & .list-action__btn__icon.icon-config:before {
+        font-size: 18px;
+      }
+    }
+    &>.list-action {
       padding: 0 3px;
       margin: 0 3px;
       background: #fff;
-    }
-
-    & .table__action_top_btn__icon {
-      background-color: $color-primary;
-      width: 36px;
-      display: block;
-      height: 36px;
-      border-radius: 10px;
-      color: #fff;
-      line-height: 36px;
-      text-align: center;
-      cursor: pointer;
-
-      &:active {
-        margin-top: 1px;
+      &>.list-action__btn {
+        background-color: $color-primary;
+        width: 36px;
+        display: block;
+        height: 36px;
+        border-radius: 10px;
+        color: #fff;
+        line-height: 36px;
+        text-align: center;
+        cursor: pointer;
+        &:active {
+          margin-top: 1px;
+        }
+        &:hover {
+          box-shadow: inset 0px 0px 5px rgba(255, 255, 255, .5);
+        }
+        &--free-width {
+          width: auto;
+          padding: 0 15px;
+        }
+        &>.list-action__btn__icon {
+          font-size: 14px;
+          vertical-align: bottom;
+        }
       }
-
-      &:hover {
-        box-shadow: inset 0px 0px 5px rgba(255,255,255,.5);
-      }
-    }
-
-    &--center {
-      & .table__action_top_btn__icon:before {
-        font-size: 12px;
-        vertical-align: bottom;
-      }
-    }
-
-    &--right {
-      & .table__action_top_btn__icon:before {
-        font-size: 10px;
-      }
-
-      & .table__action_top_btn__icon.icon-config:before {
-        font-size: 18px;
-      }
-
-
     }
   }
-
 }
 
 .table {
   width: 100%;
-
-  & > thead {
-
-    & > tr {
+  &>thead {
+    &>tr {
       background-color: $color-primary;
       height: 50px;
       border-radius: 10px 10px 0 0;
-
-      & > th {
+      &>th {
         color: #fff;
         font-weight: bold;
         font-family: Roboto, sans-serif;
@@ -86,104 +79,81 @@
         font-size: 20px;
         border-left: 1px solid rgba(255, 255, 255, 0.16);
         cursor: pointer;
-
         &:first-child {
           border-left: 0;
           border-top-left-radius: 12px;
         }
-
         &:last-child {
           border-top-right-radius: 12px;
         }
-
         .th-icon-ordenation {
           font-size: 14px;
         }
       }
     }
   }
-
-  & > tbody {
-
-    & > tr {
+  &>tbody {
+    &>tr {
       background-color: rgba(238, 237, 237, 0.2);
       height: 51px;
       border: 1px solid rgba(149, 152, 152, 0.3);
       width: 100%;
       margin-bottom: 8px;
-
       &.tr-separator {
         background-color: #fff;
         border: none;
         height: 10px;
       }
-
-      & > td {
+      &>td {
         height: 80px;
         line-height: 78px;
         padding: 0 20px;
         color: $color-gray-fifth;
         font-size: 18px;
-
         &.td-first {
           padding-left: 25px;
           position: relative;
-
-          &--text-normal {
-          }
-
+          &--text-normal {}
           &--text-bold {
             font-weight: bold;
           }
-
           &--text-blue {
             color: $color-fifth;
           }
-
           &--text-yellow {
             color: $color-sixth;
           }
-
           &--text-red {
             color: $color-eighth;
-          }
-
-          // BTN Styles
+          } // BTN Styles
           & .td-first--btn-green {
             color: $color-fourth;
           }
-
           & .td-first--btn-blue {
             color: $color-fifth;
           }
-
           & .td-first--btn-yellow {
             color: $color-sixth;
           }
-
           & .td-first--btn-red {
             color: $color-eighth;
           }
-
           & i.show-info {
             position: absolute;
             top: 26px;
             left: -13px;
             font-size: 26px;
             cursor: pointer;
-
             &:before {
               background-color: #fff;
             }
           }
         }
-
-        & > .table__td_action {
+        &>.table__td_action {
           margin-right: 40px;
           color: $color-gray-eighth;
           font-size: 20px;
           cursor: pointer;
-
           &:last-child {
             margin-right: 0;
           }

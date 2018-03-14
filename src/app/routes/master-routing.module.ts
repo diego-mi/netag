@@ -1,9 +1,9 @@
-import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
-import {LayoutComponent} from './components/common/layout/layout.component';
-import {HomeComponent} from './components/pages/home/home.component';
-import {LoginComponent} from './components/pages/login/login.component';
-import {PageSearchTableComponent} from './components/pages/page-search-table/page-search-table.component';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { LayoutComponent } from './../components/common/layout/layout.component';
+import { HomeComponent } from './../components/pages/home/home.component';
+import { LoginComponent } from './../components/pages/login/login.component';
+import { PageSearchTableComponent } from './../components/pages/page-search-table/page-search-table.component';
 
 const routes: Routes = [
   {
@@ -53,11 +53,11 @@ const routes: Routes = [
           },
           table: {
             thead: [
-              {text: 'Nome do grupo'},
-              {text: 'N° integrantes'},
-              {text: 'Empresa Principal'},
-              {text: 'CNPJ da Empresa Principal'},
-              {text: 'Ação'},
+              { text: 'Nome do grupo' },
+              { text: 'N° integrantes' },
+              { text: 'Empresa Principal' },
+              { text: 'CNPJ da Empresa Principal' },
+              { text: 'Ação' },
             ],
             tbody: [
               {
@@ -68,9 +68,9 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-green',
                     textActionClass: 'td-first td-first--text-normal'
                   },
-                  {text: '4'},
-                  {text: 'Anna Scherer Milla'},
-                  {text: '443.356.789-00'},
+                  { text: '4' },
+                  { text: 'Anna Scherer Milla' },
+                  { text: '443.356.789-00' },
                 ],
                 isSeparator: false,
                 actions: [
@@ -97,9 +97,9 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-green',
                     textActionClass: 'td-first td-first--text-normal'
                   },
-                  {text: '1'},
-                  {text: 'Arysta Lifeschience'},
-                  {text: '451.123.444-22'},
+                  { text: '1' },
+                  { text: 'Arysta Lifeschience' },
+                  { text: '451.123.444-22' },
                 ],
                 isSeparator: false,
                 actions: [
@@ -126,9 +126,9 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-green',
                     textActionClass: 'td-first td-first--text-normal'
                   },
-                  {text: '2'},
-                  {text: 'Barf SA'},
-                  {text: '557.449.265-11'},
+                  { text: '2' },
+                  { text: 'Barf SA' },
+                  { text: '557.449.265-11' },
                 ],
                 isSeparator: false,
                 actions: [
@@ -155,9 +155,9 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-green',
                     textActionClass: 'td-first td-first--text-normal'
                   },
-                  {text: '5'},
-                  {text: 'Cargill Agricola S.A.'},
-                  {text: '654.876.913-33'},
+                  { text: '5' },
+                  { text: 'Cargill Agricola S.A.' },
+                  { text: '654.876.913-33' },
                 ],
                 isSeparator: false,
                 actions: [
@@ -211,12 +211,12 @@ const routes: Routes = [
           },
           table: {
             thead: [
-              {text: 'Nome / Razão Social'},
-              {text: 'CPF / CNPJ'},
-              {text: 'AG / GD'},
-              {text: 'Nome Fantasia'},
-              {text: 'Email'},
-              {text: 'Ação'},
+              { text: 'Nome / Razão Social' },
+              { text: 'CPF / CNPJ' },
+              { text: 'AG / GD' },
+              { text: 'Nome Fantasia' },
+              { text: 'Email' },
+              { text: 'Ação' },
             ],
             tbody: [
               {
@@ -227,10 +227,10 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-green',
                     textActionClass: 'td-first td-first--text-normal'
                   },
-                  {text: '443.356.789-00'},
-                  {text: 'AG'},
-                  {text: ''},
-                  {text: ''},
+                  { text: '443.356.789-00' },
+                  { text: 'AG' },
+                  { text: '' },
+                  { text: '' },
                 ],
                 isSeparator: false,
                 actions: [
@@ -257,10 +257,10 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-green',
                     textActionClass: 'td-first td-first--text-normal'
                   },
-                  {text: '451.123.444-22'},
-                  {text: 'CD'},
-                  {text: 'Arysta Lifeschience'},
-                  {text: 'wellida.santos@goldencargo.com.br'},
+                  { text: '451.123.444-22' },
+                  { text: 'CD' },
+                  { text: 'Arysta Lifeschience' },
+                  { text: 'wellida.santos@goldencargo.com.br' },
                 ],
                 isSeparator: false,
                 actions: [
@@ -287,10 +287,10 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-green',
                     textActionClass: 'td-first td-first--text-normal'
                   },
-                  {text: '557.449.265-11'},
-                  {text: 'CD'},
-                  {text: 'Barf SA'},
-                  {text: 'barfsa@goldencargo.com.br'},
+                  { text: '557.449.265-11' },
+                  { text: 'CD' },
+                  { text: 'Barf SA' },
+                  { text: 'barfsa@goldencargo.com.br' },
                 ],
                 isSeparator: false,
                 actions: [
@@ -317,10 +317,10 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-green',
                     textActionClass: 'td-first td-first--text-normal'
                   },
-                  {text: '654.876.913-33'},
-                  {text: 'CD'},
-                  {text: 'Cargill Agricola S.A.'},
-                  {text: 'danielli_coelho@cargil.com'},
+                  { text: '654.876.913-33' },
+                  { text: 'CD' },
+                  { text: 'Cargill Agricola S.A.' },
+                  { text: 'danielli_coelho@cargil.com' },
                 ],
                 isSeparator: false,
                 actions: [
@@ -381,20 +381,20 @@ const routes: Routes = [
           },
           table: {
             thead: [
-              {text: 'Status'},
-              {text: 'Filial & Código'},
-              {text: 'Nome & Pagador'},
-              {text: 'Nota Definitiva'},
-              {text: 'Valor Total NF'},
-              {text: 'Código Produto'},
-              {text: 'Descrição Produto'},
-              {text: 'Lote'},
-              {text: 'Data Validade'},
-              {text: 'Status Venc'},
-              {text: 'Qnt. Bloq.'},
-              {text: 'Qnt. Livre'},
-              {text: 'Qnt. Total'},
-              {text: 'Dias para Término AG'}
+              { text: 'Status' },
+              { text: 'Filial & Código' },
+              { text: 'Nome & Pagador' },
+              { text: 'Nota Definitiva' },
+              { text: 'Valor Total NF' },
+              { text: 'Código Produto' },
+              { text: 'Descrição Produto' },
+              { text: 'Lote' },
+              { text: 'Data Validade' },
+              { text: 'Status Venc' },
+              { text: 'Qnt. Bloq.' },
+              { text: 'Qnt. Livre' },
+              { text: 'Qnt. Total' },
+              { text: 'Dias para Término AG' }
             ],
             tbody: [
               {
@@ -405,19 +405,19 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-blue',
                     textActionClass: 'td-first td-first--text-blue td-first--text-bold'
                   },
-                  {text: 'Balsas SP 30'},
-                  {text: 'Info Pagador'},
-                  {text: '2170/1'},
-                  {text: 'R$ 0.000,00'},
-                  {text: '00000'},
-                  {text: 'Descrição do produto'},
-                  {text: '00000'},
-                  {text: '00/00/0000'},
-                  {text: 'info'},
-                  {text: 'info'},
-                  {text: 'info'},
-                  {text: 'info'},
-                  {text: '161 dias'},
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
                 ],
                 isSeparator: false,
                 actions: [],
@@ -435,19 +435,19 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-yellow',
                     textActionClass: 'td-first td-first--text-yellow td-first--text-bold'
                   },
-                  {text: 'Balsas SP 30'},
-                  {text: 'Info Pagador'},
-                  {text: '2170/1'},
-                  {text: 'R$ 0.000,00'},
-                  {text: '00000'},
-                  {text: 'Descrição do produto'},
-                  {text: '00000'},
-                  {text: '00/00/0000'},
-                  {text: 'info'},
-                  {text: 'info'},
-                  {text: 'info'},
-                  {text: 'info'},
-                  {text: '161 dias'},
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
                 ],
                 isSeparator: false,
                 actions: [],
@@ -465,19 +465,19 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-red',
                     textActionClass: 'td-first td-first--text-red td-first--text-bold'
                   },
-                  {text: 'Balsas SP 30'},
-                  {text: 'Info Pagador'},
-                  {text: '2170/1'},
-                  {text: 'R$ 0.000,00'},
-                  {text: '00000'},
-                  {text: 'Descrição do produto'},
-                  {text: '00000'},
-                  {text: '00/00/0000'},
-                  {text: 'info'},
-                  {text: 'info'},
-                  {text: 'info'},
-                  {text: 'info'},
-                  {text: '161 dias'},
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
                 ],
                 isSeparator: false,
                 actions: [],
@@ -564,16 +564,16 @@ const routes: Routes = [
           },
           table: {
             thead: [
-              {text: 'Filial & Código'},
-              {text: 'Nome & CNPJ do pagador'},
-              {text: 'Nota Origem'},
-              {text: 'Qnt. Itens'},
-              {text: 'Peso NF'},
-              {text: 'Valor NF'},
-              {text: 'Recebido em'},
-              {text: 'Conferido em'},
-              {text: 'Conclusão em'},
-              {text: 'Nome Transportadora'},
+              { text: 'Filial & Código' },
+              { text: 'Nome & CNPJ do pagador' },
+              { text: 'Nota Origem' },
+              { text: 'Qnt. Itens' },
+              { text: 'Peso NF' },
+              { text: 'Valor NF' },
+              { text: 'Recebido em' },
+              { text: 'Conferido em' },
+              { text: 'Conclusão em' },
+              { text: 'Nome Transportadora' },
             ],
             tbody: [
               {
@@ -584,15 +584,15 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-green',
                     textActionClass: 'td-first td-first--text-normal'
                   },
-                  {text: 'Anna Scherer Milla CPF 123.456.789-00'},
-                  {text: '2170/1'},
-                  {text: '500'},
-                  {text: '100 kg'},
-                  {text: 'R$ 0.000,00'},
-                  {text: '02/01/18'},
-                  {text: '02/01/18'},
-                  {text: '02/01/18'},
-                  {text: 'Golden Cargo'}
+                  { text: 'Anna Scherer Milla CPF 123.456.789-00' },
+                  { text: '2170/1' },
+                  { text: '500' },
+                  { text: '100 kg' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '02/01/18' },
+                  { text: '02/01/18' },
+                  { text: '02/01/18' },
+                  { text: 'Golden Cargo' }
                 ],
                 isSeparator: false,
                 actions: [],
@@ -610,15 +610,15 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-green',
                     textActionClass: 'td-first td-first--text-normal'
                   },
-                  {text: 'Anna Scherer Milla CPF 123.456.789-00'},
-                  {text: '2170/1'},
-                  {text: '500'},
-                  {text: '100 kg'},
-                  {text: 'R$ 0.000,00'},
-                  {text: '02/01/18'},
-                  {text: '02/01/18'},
-                  {text: '02/01/18'},
-                  {text: 'Golden Cargo'}
+                  { text: 'Anna Scherer Milla CPF 123.456.789-00' },
+                  { text: '2170/1' },
+                  { text: '500' },
+                  { text: '100 kg' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '02/01/18' },
+                  { text: '02/01/18' },
+                  { text: '02/01/18' },
+                  { text: 'Golden Cargo' }
                 ],
                 isSeparator: false,
                 actions: [],
@@ -636,15 +636,15 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-green',
                     textActionClass: 'td-first td-first--text-normal'
                   },
-                  {text: 'Anna Scherer Milla CPF 123.456.789-00'},
-                  {text: '2170/1'},
-                  {text: '500'},
-                  {text: '100 kg'},
-                  {text: 'R$ 0.000,00'},
-                  {text: '02/01/18'},
-                  {text: '02/01/18'},
-                  {text: '02/01/18'},
-                  {text: 'Golden Cargo'}
+                  { text: 'Anna Scherer Milla CPF 123.456.789-00' },
+                  { text: '2170/1' },
+                  { text: '500' },
+                  { text: '100 kg' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '02/01/18' },
+                  { text: '02/01/18' },
+                  { text: '02/01/18' },
+                  { text: 'Golden Cargo' }
                 ],
                 isSeparator: false,
                 actions: [],
@@ -662,15 +662,15 @@ const routes: Routes = [
                     btnActionClass: 'td-first--btn-green',
                     textActionClass: 'td-first td-first--text-normal'
                   },
-                  {text: 'Anna Scherer Milla CPF 123.456.789-00'},
-                  {text: '2170/1'},
-                  {text: '500'},
-                  {text: '100 kg'},
-                  {text: 'R$ 0.000,00'},
-                  {text: '02/01/18'},
-                  {text: '02/01/18'},
-                  {text: '02/01/18'},
-                  {text: 'Golden Cargo'}
+                  { text: 'Anna Scherer Milla CPF 123.456.789-00' },
+                  { text: '2170/1' },
+                  { text: '500' },
+                  { text: '100 kg' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '02/01/18' },
+                  { text: '02/01/18' },
+                  { text: '02/01/18' },
+                  { text: 'Golden Cargo' }
                 ],
                 isSeparator: false,
                 actions: [],
@@ -692,7 +692,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {
+export class MasterRoutingModule {
 }
 
 

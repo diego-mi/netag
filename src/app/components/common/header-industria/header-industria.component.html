@@ -1,0 +1,99 @@
+<!--
+
+ -> Como usar o submenu
+
+ O js header.js ira alternar a classe .header--submenu-opened do .header
+ e
+ O js header.js ira alternar a classe .header__nav__list--submenu-opened do .header__nav__list
+ com isso
+ o submenu ira ser mostrado ou escondido.
+
+ Porem, havera casos onde o submenu esta sendo mostrado pois esta na pagina de um item do submenu
+ entao este deve ser mostrado de qualquer jeito.
+
+ Nesses casos será necessario adicionar a classe header--submenu-active no .header
+ e
+ será necessario adicionar a classe .header__nav__list--submenu-active no .header__nav__list que possuir o submenu item ativo
+
+-->
+
+<!-- Header -->
+<header class="header">
+
+  <!--div para criar a faixa de backgroud do submenu-->
+  <div class="header-submenu-enfeite"></div>
+  <!--div para criar a faixa de backgroud do submenu-->
+
+  <div class="container">
+    <div class="header__logo">
+      <img class="header__logo__img" src="https://diego-mi.github.io/netag/assets/img/header/netag_logo_header.png" alt="netAg">
+    </div>
+
+    <!--Navegacao - Esquerda-->
+    <nav class="header__nav header__nav--left">
+      <!--LIST-->
+      <ul class="header__nav__list header__nav__list--no-submenu">
+        <!--MENU ITEM-->
+        <li class="header__nav__list__item header__nav__list__item--cadastros" [ngClass]="{active: activeRoute('cadastros')}">
+          <a [routerLink]="['/industria/cadastros']">
+            <i class="header__nav__list__item__icon icon-cadastro"></i>
+            <span class="header__nav__list__item__text">Cadastros</span>
+          </a>
+        </li>
+        <!--MENU ITEM-->
+        <!--MENU ITEM-->
+        <li class="header__nav__list__item header__nav__list__item--cadastros" [ngClass]="{active: activeRoute('cadastros')}">
+          <a [routerLink]="['/industria/consultas']">
+            <i class="header__nav__list__item__icon icon-cadastro"></i>
+            <span class="header__nav__list__item__text">Consultas</span>
+          </a>
+        </li>
+        <!--MENU ITEM-->
+      </ul>
+      <!--LIST-->
+    </nav>
+    <!--Navegacao - Esquerda-->
+
+    <!--Logo Central-->
+    <div class="header__logo-central">
+      <a class="header__logo-central__link" href="">
+        <img class="header__logo-central__icon" src="https://diego-mi.github.io/netag/assets/img/header/meu-netag-logo-central.png">
+        <span class="header__logo-central__text">Meu Netag</span>
+      </a>
+    </div>
+    <!--Logo Central-->
+
+    <!--Navegacao - Direita-->
+    <nav class="header__nav header__nav--right">
+      <!--LIST-->
+      <ul class="header__nav__list header__nav__list--no-submenu">
+        <!--MENU ITEM-->
+        <li class="header__nav__list__item header__nav__list__item--consultas" [ngClass]="{active: activeRoute('consultas')}">
+          <a [routerLink]="['/industria/relatorios']">
+            <i class="header__nav__list__item__icon icon-search"></i>
+            <span class="header__nav__list__item__text">Relatórios</span>
+          </a>
+        </li>
+        <!--MENU ITEM-->
+        <!--MENU ITEM-->
+        <li class="header__nav__list__item header__nav__list__item--consultas" [ngClass]="{active: activeRoute('consultas')}">
+          <a [routerLink]="['/industria/solicitacoes']">
+            <i class="header__nav__list__item__icon icon-search"></i>
+            <span class="header__nav__list__item__text">Solicitações</span>
+          </a>
+        </li>
+        <!--MENU ITEM-->
+      </ul>
+      <!--LIST-->
+    </nav>
+    <!--Navegacao - Direita-->
+
+    <!--MENU USER-->
+    <div class="header__user-menu">
+      <i class="icon-user header__user-menu__icon"></i>
+      <span class="header__user-menu__text">Ewerton</span>
+    </div>
+    <!--MENU USER-->
+  </div>
+</header>
+<!-- Header -->

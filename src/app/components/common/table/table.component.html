@@ -3,31 +3,45 @@
 
     <!--table action-->
     <ul class="table-container__top-actions__list table-container__top-actions__list--left">
-      <li class="table__action_top_btn">
-        <span class="icon-pdf table__action_top_btn__icon"></span>
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-pdf"></span>
+        </span>
       </li>
-      <li class="table__action_top_btn">
-        <span class="icon-excel-file table__action_top_btn__icon"></span>
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-excel-file"></span>
+        </span>
       </li>
     </ul>
     <!--table action-->
     <!--table action-->
     <ul class="table-container__top-actions__list table-container__top-actions__list--center">
-      <li class="table__action_top_btn">
-        <span class="icon-arrow-left table__action_top_btn__icon"></span>
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-arrow-left"></span>
+        </span>
       </li>
-      <li class="table__action_top_btn">
-        <span class="icon-arrow-right table__action_top_btn__icon"></span>
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-arrow-right"></span>
+        </span>
       </li>
     </ul>
     <!--table action-->
     <!--table action-->
     <ul class="table-container__top-actions__list table-container__top-actions__list--right">
-      <li class="table__action_top_btn">
-        <span class="icon-view table__action_top_btn__icon"></span>
+      <li class="list-action">
+        <span class="list-action__btn list-action__btn--free-width">
+          <span class="list-action__btn__icon icon-view"></span>
+          resultados por página
+          <span>10</span>
+        </span>
       </li>
-      <li class="table__action_top_btn">
-        <span class="icon-config table__action_top_btn__icon"></span>
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-config"></span>
+        </span>
       </li>
     </ul>
     <!--table action-->
@@ -46,23 +60,23 @@
     </thead>
 
     <tbody>
-    <!--tr-->
-    <tr *ngFor="let tbodyRow of data.table.tbody" [ngClass]="{'tr-separator': tbodyRow.isSeparator===true}">
+      <!--tr-->
+      <tr *ngFor="let tbodyRow of data.table.tbody" [ngClass]="{'tr-separator': tbodyRow.isSeparator===true}">
 
-      <!--list all coluns-->
-      <td *ngFor="let tbodyItem of tbodyRow.items; let i = index" class="{{getFirstColumTextClass(tbodyItem, i)}}">
-        <i *ngIf="i===0 && tbodyItem.hasBtnAction" class="icon-plus-full show-info index-{{i}} {{getFirstColumBtnClass(tbodyItem, i)}}"></i>
-        {{tbodyItem.text}}
-      </td>
-      <!--list all coluns-->
+        <!--list all coluns-->
+        <td *ngFor="let tbodyItem of tbodyRow.items; let i = index" class="{{getFirstColumTextClass(tbodyItem, i)}}">
+          <i *ngIf="i===0 && tbodyItem.hasBtnAction" class="icon-plus-full show-info index-{{i}} {{getFirstColumBtnClass(tbodyItem, i)}}"></i>
+          {{tbodyItem.text}}
+        </td>
+        <!--list all coluns-->
 
-      <!--show actions-->
-      <td *ngIf="tbodyRow.actions.length">
-        <i *ngFor="let actionItem of tbodyRow.actions" class="{{actionItem.classes}}" title="{{actionItem.title}}"></i>
-      </td>
-      <!--show actions-->
-    </tr>
-    <!--tr-->
+        <!--show actions-->
+        <td *ngIf="tbodyRow.actions.length">
+          <i *ngFor="let actionItem of tbodyRow.actions" class="{{actionItem.classes}}" title="{{actionItem.title}}"></i>
+        </td>
+        <!--show actions-->
+      </tr>
+      <!--tr-->
     </tbody>
 
   </table>
