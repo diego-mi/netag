@@ -16,33 +16,36 @@ const routes: Routes = [
         component: HomeRevendaComponent
       },
       {
-        path: 'grupos',
+        path: 'estoque',
         component: PageSearchTableComponent,
         data: {
           search: {
             searchAction: {
-              title: 'Grupos Cadastrados',
-              isLink: true,
-              linkText: 'criar novo grupo'
+              title: 'Consulta de Estoque',
+              isLink: false,
+              linkText: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
             },
             searchForm: {
-              title: 'Encontre um grupo',
+              title: 'Buscando algo específico?',
               inputs: [
                 {
-                  placeholder: 'nome do grupo',
-                  type: 'text'
-                }, {
-                  placeholder: 'empresa principal',
-                  type: 'text'
-                }, {
-                  placeholder: 'cnpj da empresa principal',
-                  type: 'text'
-                }, {
-                  placeholder: 'empresa participante',
+                  placeholder: 'cnpj',
                   type: 'text'
                 },
                 {
-                  placeholder: 'cnpj da empresa participante',
+                  placeholder: 'entrada',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'código',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'produto',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'lote',
                   type: 'text'
                 }
               ]
@@ -50,36 +53,46 @@ const routes: Routes = [
           },
           table: {
             thead: [
-              { text: 'Nome do grupo' },
-              { text: 'N° integrantes' },
-              { text: 'Empresa Principal' },
-              { text: 'CNPJ da Empresa Principal' },
-              { text: 'Ação' },
+              { text: 'Status' },
+              { text: 'Filial & Código' },
+              { text: 'Nome & Pagador' },
+              { text: 'Nota Definitiva' },
+              { text: 'Valor Total NF' },
+              { text: 'Código Produto' },
+              { text: 'Descrição Produto' },
+              { text: 'Lote' },
+              { text: 'Data Validade' },
+              { text: 'Status Venc' },
+              { text: 'Qnt. Bloq.' },
+              { text: 'Qnt. Livre' },
+              { text: 'Qnt. Total' },
+              { text: 'Dias para Término AG' }
             ],
             tbody: [
               {
                 items: [
                   {
-                    text: 'Anna Scherer Milla',
+                    text: 'Regular',
                     hasBtnAction: true,
-                    btnActionClass: 'td-first--btn-green',
-                    textActionClass: 'td-first td-first--text-normal'
+                    btnActionClass: 'td-first--btn-blue',
+                    textActionClass: 'td-first td-first--text-blue td-first--text-bold'
                   },
-                  { text: '4' },
-                  { text: 'Anna Scherer Milla' },
-                  { text: '443.356.789-00' },
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
                 ],
                 isSeparator: false,
-                actions: [
-                  {
-                    classes: 'icon-edit action-edit table__td_action',
-                    title: 'Editar'
-                  },
-                  {
-                    classes: 'icon-delete action-delete table__td_action',
-                    title: 'Remover'
-                  }
-                ],
+                actions: [],
               },
               {
                 items: [],
@@ -89,26 +102,27 @@ const routes: Routes = [
               {
                 items: [
                   {
-                    text: 'Arysta Lifeschience do Brasil IND QUI. e AGROP. LTDA',
+                    text: 'Regular',
                     hasBtnAction: true,
-                    btnActionClass: 'td-first--btn-green',
-                    textActionClass: 'td-first td-first--text-normal'
+                    btnActionClass: 'td-first--btn-yellow',
+                    textActionClass: 'td-first td-first--text-yellow td-first--text-bold'
                   },
-                  { text: '1' },
-                  { text: 'Arysta Lifeschience' },
-                  { text: '451.123.444-22' },
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
                 ],
                 isSeparator: false,
-                actions: [
-                  {
-                    classes: 'icon-edit action-edit table__td_action',
-                    title: 'Editar'
-                  },
-                  {
-                    classes: 'icon-delete action-delete table__td_action',
-                    title: 'Remover'
-                  }
-                ],
+                actions: [],
               },
               {
                 items: [],
@@ -118,26 +132,119 @@ const routes: Routes = [
               {
                 items: [
                   {
-                    text: 'Barf SA',
+                    text: 'Regular',
                     hasBtnAction: true,
-                    btnActionClass: 'td-first--btn-green',
-                    textActionClass: 'td-first td-first--text-normal'
+                    btnActionClass: 'td-first--btn-red',
+                    textActionClass: 'td-first td-first--text-red td-first--text-bold'
                   },
-                  { text: '2' },
-                  { text: 'Barf SA' },
-                  { text: '557.449.265-11' },
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
                 ],
                 isSeparator: false,
-                actions: [
+                actions: [],
+              },
+              {
+                items: [],
+                isSeparator: true,
+                actions: [],
+              },
+            ]
+          }
+        }
+      },
+      {
+        path: 'recebimento',
+        component: PageSearchTableComponent,
+        data: {
+          search: {
+            searchAction: {
+              title: 'Consulta de Recebimentos',
+              isLink: false,
+              linkText: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
+            },
+            searchForm: {
+              title: 'Buscando algo específico?',
+              inputs: [
+                {
+                  placeholder: 'cnpj',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'nota fiscal',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'código',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'lote',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'produto',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'data entrada',
+                  type: 'text'
+                }
+              ]
+            }
+          },
+          table: {
+            thead: [
+              { text: 'Status' },
+              { text: 'Filial & Código' },
+              { text: 'Nome & Pagador' },
+              { text: 'Nota Definitiva' },
+              { text: 'Valor Total NF' },
+              { text: 'Código Produto' },
+              { text: 'Descrição Produto' },
+              { text: 'Lote' },
+              { text: 'Data Validade' },
+              { text: 'Status Venc' },
+              { text: 'Qnt. Bloq.' },
+              { text: 'Qnt. Livre' },
+              { text: 'Qnt. Total' },
+              { text: 'Dias para Término AG' }
+            ],
+            tbody: [
+              {
+                items: [
                   {
-                    classes: 'icon-edit action-edit table__td_action',
-                    title: 'Editar'
+                    text: 'Regular',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-blue',
+                    textActionClass: 'td-first td-first--text-blue td-first--text-bold'
                   },
-                  {
-                    classes: 'icon-delete action-delete table__td_action',
-                    title: 'Remover'
-                  }
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
                 ],
+                isSeparator: false,
+                actions: [],
               },
               {
                 items: [],
@@ -147,26 +254,357 @@ const routes: Routes = [
               {
                 items: [
                   {
-                    text: 'Cargill Agricola S.A.',
+                    text: 'Regular',
                     hasBtnAction: true,
-                    btnActionClass: 'td-first--btn-green',
-                    textActionClass: 'td-first td-first--text-normal'
+                    btnActionClass: 'td-first--btn-yellow',
+                    textActionClass: 'td-first td-first--text-yellow td-first--text-bold'
                   },
-                  { text: '5' },
-                  { text: 'Cargill Agricola S.A.' },
-                  { text: '654.876.913-33' },
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
                 ],
                 isSeparator: false,
-                actions: [
+                actions: [],
+              },
+              {
+                items: [],
+                isSeparator: true,
+                actions: [],
+              },
+              {
+                items: [
                   {
-                    classes: 'icon-edit action-edit table__td_action',
-                    title: 'Editar'
+                    text: 'Regular',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-red',
+                    textActionClass: 'td-first td-first--text-red td-first--text-bold'
                   },
-                  {
-                    classes: 'icon-delete action-delete table__td_action',
-                    title: 'Remover'
-                  }
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
                 ],
+                isSeparator: false,
+                actions: [],
+              },
+              {
+                items: [],
+                isSeparator: true,
+                actions: [],
+              },
+            ]
+          }
+        }
+      },
+      {
+        path: 'expedicao',
+        component: PageSearchTableComponent,
+        data: {
+          search: {
+            searchAction: {
+              title: 'Consulta de Expedição',
+              isLink: false,
+              linkText: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
+            },
+            searchForm: {
+              title: 'Buscando algo específico?',
+              inputs: [
+                {
+                  placeholder: 'cnpj',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'nota fiscal',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'código',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'lote',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'descrição do item',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'data entrada',
+                  type: 'text'
+                }
+              ]
+            }
+          },
+          table: {
+            thead: [
+              { text: 'Status' },
+              { text: 'Filial & Código' },
+              { text: 'Nome & Pagador' },
+              { text: 'Nota Definitiva' },
+              { text: 'Valor Total NF' },
+              { text: 'Código Produto' },
+              { text: 'Descrição Produto' },
+              { text: 'Lote' },
+              { text: 'Data Validade' },
+              { text: 'Status Venc' },
+              { text: 'Qnt. Bloq.' },
+              { text: 'Qnt. Livre' },
+              { text: 'Qnt. Total' },
+              { text: 'Dias para Término AG' }
+            ],
+            tbody: [
+              {
+                items: [
+                  {
+                    text: 'Regular',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-blue',
+                    textActionClass: 'td-first td-first--text-blue td-first--text-bold'
+                  },
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
+                ],
+                isSeparator: false,
+                actions: [],
+              },
+              {
+                items: [],
+                isSeparator: true,
+                actions: [],
+              },
+              {
+                items: [
+                  {
+                    text: 'Regular',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-yellow',
+                    textActionClass: 'td-first td-first--text-yellow td-first--text-bold'
+                  },
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
+                ],
+                isSeparator: false,
+                actions: [],
+              },
+              {
+                items: [],
+                isSeparator: true,
+                actions: [],
+              },
+              {
+                items: [
+                  {
+                    text: 'Regular',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-red',
+                    textActionClass: 'td-first td-first--text-red td-first--text-bold'
+                  },
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
+                ],
+                isSeparator: false,
+                actions: [],
+              },
+              {
+                items: [],
+                isSeparator: true,
+                actions: [],
+              },
+            ]
+          }
+        }
+      },
+      {
+        path: 'entrega',
+        component: PageSearchTableComponent,
+        data: {
+          search: {
+            searchAction: {
+              title: 'Consulta de Estoque',
+              isLink: false,
+              linkText: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
+            },
+            searchForm: {
+              title: 'Buscando algo específico?',
+              inputs: [
+                {
+                  placeholder: 'cnpj',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'entrada',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'código',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'produto',
+                  type: 'text'
+                },
+                {
+                  placeholder: 'lote',
+                  type: 'text'
+                }
+              ]
+            }
+          },
+          table: {
+            thead: [
+              { text: 'Status' },
+              { text: 'Filial & Código' },
+              { text: 'Nome & Pagador' },
+              { text: 'Nota Definitiva' },
+              { text: 'Valor Total NF' },
+              { text: 'Código Produto' },
+              { text: 'Descrição Produto' },
+              { text: 'Lote' },
+              { text: 'Data Validade' },
+              { text: 'Status Venc' },
+              { text: 'Qnt. Bloq.' },
+              { text: 'Qnt. Livre' },
+              { text: 'Qnt. Total' },
+              { text: 'Dias para Término AG' }
+            ],
+            tbody: [
+              {
+                items: [
+                  {
+                    text: 'Regular',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-blue',
+                    textActionClass: 'td-first td-first--text-blue td-first--text-bold'
+                  },
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
+                ],
+                isSeparator: false,
+                actions: [],
+              },
+              {
+                items: [],
+                isSeparator: true,
+                actions: [],
+              },
+              {
+                items: [
+                  {
+                    text: 'Regular',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-yellow',
+                    textActionClass: 'td-first td-first--text-yellow td-first--text-bold'
+                  },
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
+                ],
+                isSeparator: false,
+                actions: [],
+              },
+              {
+                items: [],
+                isSeparator: true,
+                actions: [],
+              },
+              {
+                items: [
+                  {
+                    text: 'Regular',
+                    hasBtnAction: true,
+                    btnActionClass: 'td-first--btn-red',
+                    textActionClass: 'td-first td-first--text-red td-first--text-bold'
+                  },
+                  { text: 'Balsas SP 30' },
+                  { text: 'Info Pagador' },
+                  { text: '2170/1' },
+                  { text: 'R$ 0.000,00' },
+                  { text: '00000' },
+                  { text: 'Descrição do produto' },
+                  { text: '00000' },
+                  { text: '00/00/0000' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: 'info' },
+                  { text: '161 dias' },
+                ],
+                isSeparator: false,
+                actions: [],
               },
               {
                 items: [],

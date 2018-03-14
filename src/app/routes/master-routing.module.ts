@@ -1,3 +1,4 @@
+import { MasterPageEmpresasComponent } from './../components/pages/master/master-page-empresas/master-page-empresas.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './../components/common/layout/layout.component';
@@ -182,166 +183,7 @@ const routes: Routes = [
       },
       {
         path: 'empresas',
-        component: PageSearchTableComponent,
-        data: {
-          search: {
-            searchAction: {
-              title: 'Empresas Cadastradas',
-              isLink: true,
-              linkText: 'adicionar nova empresa'
-            },
-            searchForm: {
-              title: 'Encontre uma empresa',
-              inputs: [
-                {
-                  placeholder: 'nome / razao social',
-                  type: 'text'
-                }, {
-                  placeholder: 'cpf / cnpj',
-                  type: 'text'
-                }, {
-                  placeholder: 'nome fantasia',
-                  type: 'text'
-                }, {
-                  placeholder: 'email',
-                  type: 'text'
-                }
-              ]
-            }
-          },
-          table: {
-            thead: [
-              { text: 'Nome / Razão Social' },
-              { text: 'CPF / CNPJ' },
-              { text: 'AG / GD' },
-              { text: 'Nome Fantasia' },
-              { text: 'Email' },
-              { text: 'Ação' },
-            ],
-            tbody: [
-              {
-                items: [
-                  {
-                    text: 'Anna Scherer Milla',
-                    hasBtnAction: true,
-                    btnActionClass: 'td-first--btn-green',
-                    textActionClass: 'td-first td-first--text-normal'
-                  },
-                  { text: '443.356.789-00' },
-                  { text: 'AG' },
-                  { text: '' },
-                  { text: '' },
-                ],
-                isSeparator: false,
-                actions: [
-                  {
-                    classes: 'icon-edit action-edit table__td_action',
-                    title: 'Editar'
-                  },
-                  {
-                    classes: 'icon-delete action-delete table__td_action',
-                    title: 'Remover'
-                  }
-                ],
-              },
-              {
-                items: [],
-                isSeparator: true,
-                actions: [],
-              },
-              {
-                items: [
-                  {
-                    text: 'Arysta Lifeschience do Brasil IND QUI. e AGROP. LTDA',
-                    hasBtnAction: true,
-                    btnActionClass: 'td-first--btn-green',
-                    textActionClass: 'td-first td-first--text-normal'
-                  },
-                  { text: '451.123.444-22' },
-                  { text: 'CD' },
-                  { text: 'Arysta Lifeschience' },
-                  { text: 'wellida.santos@goldencargo.com.br' },
-                ],
-                isSeparator: false,
-                actions: [
-                  {
-                    classes: 'icon-edit action-edit table__td_action',
-                    title: 'Editar'
-                  },
-                  {
-                    classes: 'icon-delete action-delete table__td_action',
-                    title: 'Remover'
-                  }
-                ],
-              },
-              {
-                items: [],
-                isSeparator: true,
-                actions: [],
-              },
-              {
-                items: [
-                  {
-                    text: 'Barf SA',
-                    hasBtnAction: true,
-                    btnActionClass: 'td-first--btn-green',
-                    textActionClass: 'td-first td-first--text-normal'
-                  },
-                  { text: '557.449.265-11' },
-                  { text: 'CD' },
-                  { text: 'Barf SA' },
-                  { text: 'barfsa@goldencargo.com.br' },
-                ],
-                isSeparator: false,
-                actions: [
-                  {
-                    classes: 'icon-edit action-edit table__td_action',
-                    title: 'Editar'
-                  },
-                  {
-                    classes: 'icon-delete action-delete table__td_action',
-                    title: 'Remover'
-                  }
-                ],
-              },
-              {
-                items: [],
-                isSeparator: true,
-                actions: [],
-              },
-              {
-                items: [
-                  {
-                    text: 'Cargill Agricola S.A.',
-                    hasBtnAction: true,
-                    btnActionClass: 'td-first--btn-green',
-                    textActionClass: 'td-first td-first--text-normal'
-                  },
-                  { text: '654.876.913-33' },
-                  { text: 'CD' },
-                  { text: 'Cargill Agricola S.A.' },
-                  { text: 'danielli_coelho@cargil.com' },
-                ],
-                isSeparator: false,
-                actions: [
-                  {
-                    classes: 'icon-edit action-edit table__td_action',
-                    title: 'Editar'
-                  },
-                  {
-                    classes: 'icon-delete action-delete table__td_action',
-                    title: 'Remover'
-                  }
-                ],
-              },
-              {
-                items: [],
-                isSeparator: true,
-                actions: [],
-              },
-            ]
-          }
-        }
+        component: MasterPageEmpresasComponent
       },
       {
         path: 'estoque',
@@ -531,8 +373,8 @@ const routes: Routes = [
               title: 'Consulta de Recebimentos',
               isLink: false,
               linkText: 'Lorem ipsum dolor sit \n' +
-              'amet, consectetuer \n' +
-              'adipiscing elit.'
+                'amet, consectetuer \n' +
+                'adipiscing elit.'
             },
             searchForm: {
               title: 'Buscando algo específico?',

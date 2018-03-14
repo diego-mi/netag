@@ -23,6 +23,9 @@ import { HeaderProdutorComponent } from './components/common/header-produtor/hea
 import { LayoutProdutorComponent } from './components/common/layout-produtor/layout-produtor.component';
 import { LayoutRevendaComponent } from './components/common/layout-revenda/layout-revenda.component';
 import { LayoutIndustriaComponent } from './components/common/layout-industria/layout-industria.component';
+import { MasterPageFiliaisComponent } from './components/pages/master/master-page-filiais/master-page-filiais.component';
+import { MasterPageEmpresasComponent } from './components/pages/master/master-page-empresas/master-page-empresas.component';
+import { MasterPageGruposComponent } from './components/pages/master/master-page-grupos/master-page-grupos.component';
 
 
 @NgModule({
@@ -46,7 +49,10 @@ import { LayoutIndustriaComponent } from './components/common/layout-industria/l
     HeaderProdutorComponent,
     LayoutProdutorComponent,
     LayoutRevendaComponent,
-    LayoutIndustriaComponent
+    LayoutIndustriaComponent,
+    MasterPageFiliaisComponent,
+    MasterPageEmpresasComponent,
+    MasterPageGruposComponent
   ],
   imports: [
     BrowserModule,
