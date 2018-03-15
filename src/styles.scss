@@ -1,23 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "assets/sass/common/reset";
 @import "assets/sass/common/common";
 @import "assets/sass/common/variables";
 @import "assets/sass/common/flex-grid";
 @import "assets/sass/common/headlings";
 @import "assets/sass/common/box";
-
 // Layout Commom
 @import "assets/sass/common/header";
 @import "assets/sass/common/footer";
 @import "assets/sass/common/search-form";
+@import "assets/sass/common/form";
 @import "assets/sass/common/table";
-
 // Layout
 @import "assets/sass/layout/login";
 @import "assets/sass/layout/destaques";
-
 @import "assets/sass/layout/page-groups";
-
-
 // Icons
 @import "assets/icon-fontface.css";

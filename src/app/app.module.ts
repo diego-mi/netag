@@ -26,6 +26,7 @@ import { LayoutIndustriaComponent } from './components/common/layout-industria/l
 import { MasterPageFiliaisComponent } from './components/pages/master/master-page-filiais/master-page-filiais.component';
 import { MasterPageEmpresasComponent } from './components/pages/master/master-page-empresas/master-page-empresas.component';
 import { MasterPageGruposComponent } from './components/pages/master/master-page-grupos/master-page-grupos.component';
+import { MasterPageEmpresasFormComponent } from './components/pages/master/master-page-empresas-form/master-page-empresas-form.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { MasterPageGruposComponent } from './components/pages/master/master-page
     LayoutIndustriaComponent,
     MasterPageFiliaisComponent,
     MasterPageEmpresasComponent,
-    MasterPageGruposComponent
+    MasterPageGruposComponent,
+    MasterPageEmpresasFormComponent
   ],
   imports: [
     BrowserModule,

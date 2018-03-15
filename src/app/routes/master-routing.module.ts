@@ -1,3 +1,4 @@
+import { MasterPageEmpresasFormComponent } from './../components/pages/master/master-page-empresas-form/master-page-empresas-form.component';
 import { MasterPageEmpresasComponent } from './../components/pages/master/master-page-empresas/master-page-empresas.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -183,7 +184,20 @@ const routes: Routes = [
       },
       {
         path: 'empresas',
-        component: MasterPageEmpresasComponent
+        children: [
+          {
+            path: '',
+            component: MasterPageEmpresasComponent
+          },
+          {
+            path: 'cadastrar',
+            component: MasterPageEmpresasFormComponent
+          },
+          {
+            path: 'editar',
+            component: MasterPageEmpresasFormComponent
+          },
+        ]
       },
       {
         path: 'estoque',
