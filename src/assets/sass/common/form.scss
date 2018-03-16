@@ -7,6 +7,8 @@
 
 .form-header {
   @extend .box;
+  @extend .flex;
+  flex-flow: column;
   width: 323px;
   min-height: 242px;
   padding: 22px 40px 24px 20px;
@@ -46,6 +48,7 @@
 .form-content {
   @extend .box;
   padding: 45px 66px 69px;
+  width: 1119px;
   &>.form-row {
     @extend .flex;
     width: 100%;
@@ -77,6 +80,7 @@
   margin-bottom: 15px;
   width: 100%;
   display: block;
+  font-weight: bold;
 }
 
 .form-group>label.input-label,
@@ -84,6 +88,7 @@
   font-family: Roboto, sans-serif;
   font-size: 20px;
   color: $color-gray-fifth;
+  padding-right: 5px;
 }
 
 .form-control {
@@ -100,4 +105,80 @@
   content: " ";
   width: 100%;
   display: block;
+}
+
+.form-is-simplified {
+  align-self: flex-end;
+}
+
+/**
+ * Checkbox styled 1
+ */
+
+.checkbox-simple {
+  width: 23px;
+  height: 23px;
+  background: #fff;
+  border-radius: 100%;
+  position: relative;
+  border: 2px solid $color-primary;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 3px;
+}
+
+.checkbox-simple .checkbox {
+  display: none;
+}
+
+.checkbox-simple label {
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 100px;
+  transition: all .3s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+}
+
+.checkbox-simple input[type=checkbox]:checked+label {
+  background: $color-primary;
+}
+
+/**
+ * Create the slider bar
+ */
+
+.checkbox-slider {
+  width: 35px;
+  height: 15px;
+  background: rgba(100, 100, 100, 0.2);
+  position: relative;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.checkbox-slider .checkbox {
+  display: none;
+}
+
+.checkbox-slider label {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: all .5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $color-gray-fifth;
+}
+
+.checkbox-slider input[type=checkbox]:checked+label {
+  left: 27px;
+  background: $color-primary;
 }
