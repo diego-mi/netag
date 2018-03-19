@@ -1,8 +1,9 @@
 .form {
   @extend .flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   padding: 25px 40px;
+  margin-bottom: 50px;
 }
 
 .form-header {
@@ -53,6 +54,7 @@
     @extend .flex;
     width: 100%;
   }
+  margin: 0 20px;
 }
 
 .form-row+.form-row {
@@ -72,23 +74,26 @@
   }
 }
 
-.form-group>.form-label {
-  font-family: Roboto, sans-serif;
-  font-size: 20px;
+.form-group>.form-section-title {
   line-height: 24px;
-  color: $color-primary;
   margin-bottom: 15px;
   width: 100%;
-  display: block;
+}
+
+.form-group>.form-section-title>.text {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  color: $color-primary;
   font-weight: bold;
 }
 
-.form-group>label.input-label,
+div.form-group label.input-label,
 .form-control {
   font-family: Roboto, sans-serif;
   font-size: 20px;
   color: $color-gray-fifth;
   padding-right: 5px;
+  font-weight: normal;
 }
 
 .form-control {
@@ -96,7 +101,7 @@
   line-height: 46px;
   border: 1px solid $color-gray-sixth;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 19px;
 }
 
 .label-fake {
@@ -108,7 +113,7 @@
 }
 
 .form-is-simplified {
-  align-self: flex-end;
+  margin-top: 40px;
 }
 
 /**
@@ -181,4 +186,63 @@
 .checkbox-slider input[type=checkbox]:checked+label {
   left: 27px;
   background: $color-primary;
+}
+
+// FORM BTN
+.form-actions {
+  @extend .box;
+  @extend .flex;
+  width: 323px;
+  flex-flow: column;
+  align-self: flex-end;
+  padding: 22px 40px 24px 20px;
+}
+
+.form-btn {
+  @extend .flex;
+  justify-content: flex-start;
+  align-items: center;
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  &>.text {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-gray-fifth;
+    text-align: left;
+  }
+  &+.form-btn {
+    margin-top: 20px;
+  }
+}
+
+.icon-form-finish {
+  &>.icon-form-finish-single {
+    margin-right: 13px;
+    position: relative;
+    &::before {
+      font-size: 32px;
+    }
+    &.first {
+      &::before {
+        color: rgba(161, 164, 166, .4);
+      }
+    }
+    &.second {
+      margin-left: -44px;
+      &::before {
+        color: rgba(161, 164, 166, .9);
+      }
+    }
+  }
+}
+
+.icon-form-finish-repeat {
+  margin-right: 18px;
+  margin-left: 5px;
+  &::before {
+    font-size: 46px;
+  }
 }

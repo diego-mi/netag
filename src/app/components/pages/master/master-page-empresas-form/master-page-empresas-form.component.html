@@ -10,8 +10,8 @@
     <div class="form-is-simplified">
       Cadastro simplificado
       <div class="checkbox-slider">
-        <input class="checkbox" type="checkbox" value="1" id="checkbox-sliderInput" name="">
-        <label for="checkbox-sliderInput"></label>
+        <input class="checkbox" type="checkbox" value="1" id="checkbox-cad-simple" name="">
+        <label for="checkbox-cad-simple"></label>
       </div>
     </div>
 
@@ -24,45 +24,45 @@
     <div class="form-row">
       <!-- form-group -->
       <div class="form-group form-group--half">
-        <label class="form-label">
-          Dados da empresa
+        <p class="form-section-title">
+          <span class="text">Dados da empresa</span>
           <label class="input-label" for="">
             <div class="checkbox-simple">
-              <input class="checkbox" type="checkbox" value="1" id="checkbox-simpleInput" name="" />
+              <input class="checkbox" type="checkbox" value="1" id="checkbox-1" name="" />
 
-              <label for="checkbox-simpleInput">
+              <label for="checkbox-1">
               </label>
             </div>
             AG
           </label>
           <label class="input-label" for="">
             <div class="checkbox-simple">
-              <input class="checkbox" type="checkbox" value="1" id="checkbox-simpleInput" name="" />
+              <input class="checkbox" type="checkbox" value="1" id="checkbox-simple2" name="" />
 
-              <label for="checkbox-simpleInput">
+              <label for="checkbox-simple2">
               </label>
             </div>
             CD
           </label>
-        </label>
+        </p>
       </div>
       <!-- form-group -->
       <!-- form-group -->
       <div class="form-group form-group--half">
         <label class="input-label" for="">
           <div class="checkbox-simple">
-            <input class="checkbox" type="checkbox" value="1" id="checkbox-simpleInput" name="" />
+            <input class="checkbox" type="checkbox" value="1" id="checkbox-simple2" name="" />
 
-            <label for="checkbox-simpleInput">
+            <label for="checkbox-simple2">
             </label>
           </div>
           Master
         </label>
         <label class="input-label" for="">
           <div class="checkbox-simple">
-            <input class="checkbox" type="checkbox" value="1" id="checkbox-simpleInput" name="" />
+            <input class="checkbox" type="checkbox" value="1" id="checkbox-simple3" name="" />
 
-            <label for="checkbox-simpleInput">
+            <label for="checkbox-simple3">
             </label>
           </div>
           Produtor
@@ -70,18 +70,18 @@
         </label>
         <label class="input-label" for="">
           <div class="checkbox-simple">
-            <input class="checkbox" type="checkbox" value="1" id="checkbox-simpleInput" name="" />
+            <input class="checkbox" type="checkbox" value="1" id="checkbox-simple4" name="" />
 
-            <label for="checkbox-simpleInput">
+            <label for="checkbox-simple4">
             </label>
           </div>
           Industia
         </label>
         <label class="input-label" for="">
           <div class="checkbox-simple">
-            <input class="checkbox" type="checkbox" value="1" id="checkbox-simpleInput" name="" />
+            <input class="checkbox" type="checkbox" value="1" id="checkbox-simple5" name="" />
 
-            <label for="checkbox-simpleInput">
+            <label for="checkbox-simple5">
             </label>
           </div>
           Revenda
@@ -125,9 +125,9 @@
     <div class="form-row">
       <!-- form-group -->
       <div class="form-group form-group--half">
-        <label class="form-label">
-          Dados do usuário
-        </label>
+        <p class="form-section-title">
+          <span class="text">Dados do usuário</span>
+        </p>
         <input type="text" class="form-control" placeholder="email">
       </div>
       <!-- form-group -->
@@ -143,20 +143,40 @@
     <div class="form-row">
       <!-- form-group -->
       <div class="form-group form-group--half">
+
         <label class="input-label" for="">
-          <input type="checkbox">Usuário Master
+          <div class="checkbox-simple">
+            <input class="checkbox" type="checkbox" value="1" id="checkbox-simple6" name="" />
+            <label for="checkbox-simple6">
+            </label>
+          </div>
+          Usuário Master
         </label>
+
         <label class="input-label" for="">
-          <input type="checkbox">Administrador do sistema
+          <div class="checkbox-simple">
+            <input class="checkbox" type="checkbox" value="1" id="checkbox-simple7" name="" />
+            <label for="checkbox-simple7">
+            </label>
+          </div>
+          Administrador do sistema
         </label>
+
       </div>
       <!-- form-group -->
       <!-- form-group -->
       <div class="form-group form-group--half">
+
         <label class="input-label" for="">
-          <input type="checkbox">Visualização de dados com pagamento expirado
+          <div class="checkbox-simple">
+            <input class="checkbox" type="checkbox" value="1" id="checkbox-simple8" name="" />
+            <label for="checkbox-simple8">
+            </label>
+          </div>
+          Visualização de dados com pagamento expirado
         </label>
       </div>
+
       <!-- form-group -->
     </div>
     <!-- form row -->
@@ -164,9 +184,9 @@
     <div class="form-row">
       <!-- form-group -->
       <div class="form-group form-group--half">
-        <label class="form-label">
-          Outros
-        </label>
+        <p class="form-section-title">
+          <span class="text">Outros</span>
+        </p>
         <select class="form-control" name="" id="">
           <option value="">matriz do grupo</option>
         </select>
@@ -188,8 +208,24 @@
 
   <!-- form actions -->
   <div class="form-actions">
-    <h2>Finalização</h2>
-    <button>confirmar & finalizar</button>
+    <h2 class="form-title">
+      Finalização
+    </h2>
+
+    <button class="form-btn form-btn-add-repeat">
+      <span class="icon-form-finish-repeat"></span>
+      <span class="text">confirmar
+        <br> & continuar adicionando
+      </span>
+    </button>
+    <button class="form-btn form-btn-add">
+      <span class="icon-form-finish">
+        <span class="icon-form-finish-single first"></span>
+        <span class="icon-form-finish-single second"></span>
+      </span>
+      <span class="text">confirmar
+        <br> & finalizar</span>
+    </button>
   </div>
   <!-- form actions -->
 </form>
