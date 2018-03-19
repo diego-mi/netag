@@ -27,6 +27,7 @@ import { MasterPageFiliaisComponent } from './components/pages/master/master-pag
 import { MasterPageEmpresasComponent } from './components/pages/master/master-page-empresas/master-page-empresas.component';
 import { MasterPageGruposComponent } from './components/pages/master/master-page-grupos/master-page-grupos.component';
 import { MasterPageEmpresasFormComponent } from './components/pages/master/master-page-empresas-form/master-page-empresas-form.component';
+import { MasterPageEmpresasEditComponent } from './components/pages/master/master-page-empresas-edit/master-page-empresas-edit.component';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { MasterPageEmpresasFormComponent } from './components/pages/master/maste
     MasterPageFiliaisComponent,
     MasterPageEmpresasComponent,
     MasterPageGruposComponent,
-    MasterPageEmpresasFormComponent
+    MasterPageEmpresasFormComponent,
+    MasterPageEmpresasEditComponent
   ],
   imports: [
     BrowserModule,

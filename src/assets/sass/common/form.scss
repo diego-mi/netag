@@ -239,6 +239,34 @@ div.form-group label.input-label,
   }
 }
 
+.form-btn-finish.form-btn-large {
+  flex-flow: column;
+  text-align: center;
+  margin-bottom: 15px;
+  &>.icon-form-finish {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    &>.icon-form-finish-single {
+      margin-right: 13px;
+      position: relative;
+      &::before {
+        font-size: 40px;
+      }
+      &.first {
+        &::before {
+          color: rgba(161, 164, 166, .4);
+        }
+      }
+      &.second {
+        margin-left: -55px;
+        &::before {
+          color: rgba(161, 164, 166, .9);
+        }
+      }
+    }
+  }
+}
+
 .icon-form-finish-repeat {
   margin-right: 18px;
   margin-left: 5px;

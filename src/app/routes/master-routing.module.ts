@@ -1,3 +1,4 @@
+import { MasterPageEmpresasEditComponent } from './../components/pages/master/master-page-empresas-edit/master-page-empresas-edit.component';
 import { MasterPageEmpresasFormComponent } from './../components/pages/master/master-page-empresas-form/master-page-empresas-form.component';
 import { MasterPageEmpresasComponent } from './../components/pages/master/master-page-empresas/master-page-empresas.component';
 import { NgModule } from '@angular/core';
@@ -195,7 +196,7 @@ const routes: Routes = [
           },
           {
             path: 'editar',
-            component: MasterPageEmpresasFormComponent
+            component: MasterPageEmpresasEditComponent
           },
         ]
       },
