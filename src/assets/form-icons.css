@@ -7,7 +7,7 @@
 }
 
 [class^="icon-form"],
-[class*=" icon-"] {
+[class*=" icon-form"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'form-icon' !important;
   speak: none;
