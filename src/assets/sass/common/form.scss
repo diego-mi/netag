@@ -10,6 +10,7 @@
   @extend .box;
   @extend .flex;
   flex-flow: column;
+  justify-content: flex-start;
   width: 323px;
   min-height: 242px;
   padding: 22px 40px 24px 20px;
@@ -36,6 +37,7 @@
   font-size: 20px;
   line-height: 30px;
   color: $color-gray-eighth;
+  align-self: flex-end;
 }
 
 .form-is-simplified {
