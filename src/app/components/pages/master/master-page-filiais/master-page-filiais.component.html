@@ -1,3 +1,64 @@
-<p>
-  master-page-filiais works!
-</p>
+<section class="search">
+  <!--action/info/etc-->
+  <div class="search__action">
+    <h2 class="search__action__title">Filiais Cadastradas</h2>
+
+    <a class="search__action__link">
+      <span class="icon-plus-full search__action__link__icon"></span>
+      <span class="search__action__link__text" [routerLink]="['/master/filiais/cadastrar']">adicionar nova filial</span>
+    </a>
+  </div>
+  <!--action/info/etc-->
+
+  <!-- search form -->
+  <form action="" class="search__form">
+
+    <!--search by free text-->
+    <div class="search__form__by-text">
+      <h4 class="search__form__by-text__title">Encontre uma filial</h4>
+      <p class="search__form__by-text__text">
+        Use os filtros ou use a lupa para procurar em toda a tabela
+      </p>
+
+      <div class="form__grouped">
+        <span class="icon-search-simple form__grouped__icon"></span>
+        <input type="text" class="form__grouped__input-control">
+      </div>
+    </div>
+    <!--search by free text-->
+
+    <!--search by inputs-->
+    <div class="search__form__by-inputs">
+      <div class="search__form__by-inputs__manage-filters">
+        <p>
+          <span class="icon-filtro"></span>
+          <span class="text">Gerenciar Filtros</span>
+        </p>
+      </div>
+
+      <div class="search__form__by-inputs__content">
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="nome da filial">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="UF da filial">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="código logix">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+      </div>
+    </div>
+    <!--search by inputs-->
+
+  </form>
+  <!-- search form -->
+</section>
