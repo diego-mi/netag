@@ -28,6 +28,22 @@ import { MasterPageEmpresasComponent } from './components/pages/master/master-pa
 import { MasterPageGruposComponent } from './components/pages/master/master-page-grupos/master-page-grupos.component';
 import { MasterPageEmpresasFormComponent } from './components/pages/master/master-page-empresas-form/master-page-empresas-form.component';
 import { MasterPageEmpresasEditComponent } from './components/pages/master/master-page-empresas-edit/master-page-empresas-edit.component';
+import { MasterPageFiliaisEditComponent } from './components/pages/master/master-page-filiais-edit/master-page-filiais-edit.component';
+import { MasterPageFiliaisFormComponent } from './components/pages/master/master-page-filiais-form/master-page-filiais-form.component';
+import { MasterPageGruposEditComponent } from './components/pages/master/master-page-grupos-edit/master-page-grupos-edit.component';
+import { MasterPageGruposFormComponent } from './components/pages/master/master-page-grupos-form/master-page-grupos-form.component';
+import { MasterPageEstoqueFormComponent } from './components/pages/master/master-page-estoque-form/master-page-estoque-form.component';
+import { MasterPageEstoqueComponent } from './components/pages/master/master-page-estoque/master-page-estoque.component';
+import { MasterPageEstoqueEditComponent } from './components/pages/master/master-page-estoque-edit/master-page-estoque-edit.component';
+import { MasterPageRecebimentoComponent } from './components/pages/master/master-page-recebimento/master-page-recebimento.component';
+import { MasterPageRecebimentoFormComponent } from './components/pages/master/master-page-recebimento-form/master-page-recebimento-form.component';
+import { MasterPageRecebimentoEditComponent } from './components/pages/master/master-page-recebimento-edit/master-page-recebimento-edit.component';
+import { MasterPageExpedicaoComponent } from './components/pages/master/master-page-expedicao/master-page-expedicao.component';
+import { MasterPageExpedicaoEditComponent } from './components/pages/master/master-page-expedicao-edit/master-page-expedicao-edit.component';
+import { MasterPageExpedicaoFormComponent } from './components/pages/master/master-page-expedicao-form/master-page-expedicao-form.component';
+import { MasterPageEntregaComponent } from './components/pages/master/master-page-entrega/master-page-entrega.component';
+import { MasterPageEntregaFormComponent } from './components/pages/master/master-page-entrega-form/master-page-entrega-form.component';
+import { MasterPageEntregaEditComponent } from './components/pages/master/master-page-entrega-edit/master-page-entrega-edit.component';
 
 
 @NgModule({
@@ -56,7 +72,23 @@ import { MasterPageEmpresasEditComponent } from './components/pages/master/maste
     MasterPageEmpresasComponent,
     MasterPageGruposComponent,
     MasterPageEmpresasFormComponent,
-    MasterPageEmpresasEditComponent
+    MasterPageEmpresasEditComponent,
+    MasterPageFiliaisEditComponent,
+    MasterPageFiliaisFormComponent,
+    MasterPageGruposEditComponent,
+    MasterPageGruposFormComponent,
+    MasterPageEstoqueFormComponent,
+    MasterPageEstoqueComponent,
+    MasterPageEstoqueEditComponent,
+    MasterPageRecebimentoComponent,
+    MasterPageRecebimentoFormComponent,
+    MasterPageRecebimentoEditComponent,
+    MasterPageExpedicaoComponent,
+    MasterPageExpedicaoEditComponent,
+    MasterPageExpedicaoFormComponent,
+    MasterPageEntregaComponent,
+    MasterPageEntregaFormComponent,
+    MasterPageEntregaEditComponent
   ],
   imports: [
     BrowserModule,
