@@ -5,7 +5,7 @@
 
     <a class="search__action__link">
       <span class="icon-plus-full search__action__link__icon"></span>
-      <span class="search__action__link__text" [routerLink]="['/master/empresas/cadastrar']">adicionar novo grupo</span>
+      <span class="search__action__link__text" [routerLink]="['/master/grupos/cadastrar']">adicionar novo grupo</span>
     </a>
   </div>
   <!--action/info/etc-->
@@ -175,7 +175,7 @@
 
         <!--show actions-->
         <td class="td-first td-first--text-td-first td-first--text-normal">
-          <i class="icon-edit action-edit table__td_action" title="Editar"></i>
+          <a [routerLink]="['/master/grupos/editar']" class="icon-edit action-edit table__td_action" title="Editar"></a>
           <i class="icon-delete action-delete table__td_action" title="Remover"></i>
         </td>
         <!--show actions-->
@@ -203,7 +203,8 @@
 
         <!--show actions-->
         <td class="td-first td-first--text-td-first td-first--text-normal">
-          <i class="icon-edit action-edit table__td_action" title="Editar"></i>
+          <a [routerLink]="['/master/grupos/editar']" class="icon-edit action-edit table__td_action" title="Editar"></a>
+
           <i class="icon-delete action-delete table__td_action" title="Remover"></i>
         </td>
         <!--show actions-->
