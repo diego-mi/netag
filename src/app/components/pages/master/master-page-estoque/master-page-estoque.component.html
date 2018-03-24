@@ -1,3 +1,263 @@
-<p>
-  master-page-estoque works!
-</p>
+<section class="search">
+  <!--action/info/etc-->
+  <div class="search__action">
+    <h2 class="search__action__title">Consulta de Estoque</h2>
+
+    <a class="search__action__link">
+      <span class="icon-plus-full search__action__link__icon"></span>
+      <span class="search__action__link__text" [routerLink]="['/master/estoque/cadastrar']">adicionar nova empresa</span>
+    </a>
+  </div>
+  <!--action/info/etc-->
+
+  <!-- search form -->
+  <form action="" class="search__form">
+
+    <!--search by free text-->
+    <div class="search__form__by-text">
+      <h4 class="search__form__by-text__title">Buscando algo specífico?</h4>
+      <p class="search__form__by-text__text">
+        Use os filtros ou use a lupa para procurar em toda a tabela
+      </p>
+
+      <div class="form__grouped">
+        <span class="icon-search-simple form__grouped__icon"></span>
+        <input type="text" class="form__grouped__input-control">
+      </div>
+    </div>
+    <!--search by free text-->
+
+    <!--search by inputs-->
+    <div class="search__form__by-inputs">
+      <div class="search__form__by-inputs__manage-filters">
+        <p>
+          <span class="icon-filtro"></span>
+          <span class="text">Gerenciar Filtros</span>
+        </p>
+      </div>
+
+      <div class="search__form__by-inputs__content">
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="cnpj">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="entrada">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="código">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="produto">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="lote">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+      </div>
+    </div>
+    <!--search by inputs-->
+
+  </form>
+  <!-- search form -->
+</section>
+
+
+<!-- TABLE -->
+<div class="table-container">
+  <div class="table-container__top-actions">
+
+    <!--table action-->
+    <ul class="table-container__top-actions__list table-container__top-actions__list--left">
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-pdf"></span>
+        </span>
+      </li>
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-excel-file"></span>
+        </span>
+      </li>
+    </ul>
+    <!--table action-->
+    <!--table action-->
+    <ul class="table-container__top-actions__list table-container__top-actions__list--center">
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-arrow-left"></span>
+        </span>
+      </li>
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-arrow-right"></span>
+        </span>
+      </li>
+    </ul>
+    <!--table action-->
+    <!--table action-->
+    <ul class="table-container__top-actions__list table-container__top-actions__list--right">
+      <li class="list-action">
+        <span class="list-action__btn list-action__btn--free-width">
+          <span class="list-action__btn__icon icon-view"></span>
+          resultados por página
+          <span>10</span>
+        </span>
+      </li>
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-config"></span>
+        </span>
+      </li>
+    </ul>
+    <!--table action-->
+  </div>
+
+  <!--table - info list-->
+  <table class="table">
+
+    <thead>
+      <tr>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Status
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Filial & Código
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Nome & Pagador
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Nota Definitiva
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Valor Total NF
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Cód. Produto
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Descrição Produto
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Lote
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Data Validade
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Status Venc.
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Qnt. Bloq
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Qnt. Livre
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Qnt. Total
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Dias para Término AG
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!--tr-->
+      <tr>
+        <!--list all coluns-->
+        <td class="td-first td-first--text-td-first td-first--text-normal">
+          <i class="icon-plus-full show-info index-0 td-first--btn-green"></i>
+          Regular
+        </td>
+
+        <td>
+          Balsas - SP 30
+        </td>
+
+        <td>
+          Info Pagador
+        </td>
+
+        <td>
+          2170/1
+        </td>
+
+        <td>
+          R$ 0.000,
+        </td>
+
+        <td>
+          00000
+        </td>
+
+        <td>
+          descrição do produto
+        </td>
+
+        <td>
+          00000
+        </td>
+
+        <td>
+          00/00/0000
+        </td>
+
+        <td>
+          info
+        </td>
+
+        <td>
+          info
+        </td>
+
+        <td>
+          info
+        </td>
+
+        <td>
+          info
+        </td>
+
+        <td>
+          161 dias
+        </td>
+      </tr>
+      <!--tr-->
+      <tr class="tr-separator">
+      </tr>
+    </tbody>
+
+  </table>
+  <!--table - info list-->
+
+</div>
+<!-- TABLE -->

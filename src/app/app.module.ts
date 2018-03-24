@@ -32,9 +32,7 @@ import { MasterPageFiliaisEditComponent } from './components/pages/master/master
 import { MasterPageFiliaisFormComponent } from './components/pages/master/master-page-filiais-form/master-page-filiais-form.component';
 import { MasterPageGruposEditComponent } from './components/pages/master/master-page-grupos-edit/master-page-grupos-edit.component';
 import { MasterPageGruposFormComponent } from './components/pages/master/master-page-grupos-form/master-page-grupos-form.component';
-import { MasterPageEstoqueFormComponent } from './components/pages/master/master-page-estoque-form/master-page-estoque-form.component';
 import { MasterPageEstoqueComponent } from './components/pages/master/master-page-estoque/master-page-estoque.component';
-import { MasterPageEstoqueEditComponent } from './components/pages/master/master-page-estoque-edit/master-page-estoque-edit.component';
 import { MasterPageRecebimentoComponent } from './components/pages/master/master-page-recebimento/master-page-recebimento.component';
 import { MasterPageRecebimentoFormComponent } from './components/pages/master/master-page-recebimento-form/master-page-recebimento-form.component';
 import { MasterPageRecebimentoEditComponent } from './components/pages/master/master-page-recebimento-edit/master-page-recebimento-edit.component';
@@ -77,9 +75,7 @@ import { MasterPageEntregaEditComponent } from './components/pages/master/master
     MasterPageFiliaisFormComponent,
     MasterPageGruposEditComponent,
     MasterPageGruposFormComponent,
-    MasterPageEstoqueFormComponent,
     MasterPageEstoqueComponent,
-    MasterPageEstoqueEditComponent,
     MasterPageRecebimentoComponent,
     MasterPageRecebimentoFormComponent,
     MasterPageRecebimentoEditComponent,

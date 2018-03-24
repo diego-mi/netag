@@ -22,8 +22,6 @@ import { MasterPageEntregaEditComponent } from './../components/pages/master/mas
 import { MasterPageEntregaFormComponent } from './../components/pages/master/master-page-entrega-form/master-page-entrega-form.component';
 
 import { MasterPageEstoqueComponent } from './../components/pages/master/master-page-estoque/master-page-estoque.component';
-import { MasterPageEstoqueEditComponent } from './../components/pages/master/master-page-estoque-edit/master-page-estoque-edit.component';
-import { MasterPageEstoqueFormComponent } from './../components/pages/master/master-page-estoque-form/master-page-estoque-form.component';
 
 import { MasterPageExpedicaoComponent } from './../components/pages/master/master-page-expedicao/master-page-expedicao.component';
 import { MasterPageExpedicaoEditComponent } from './../components/pages/master/master-page-expedicao-edit/master-page-expedicao-edit.component';
@@ -138,14 +136,6 @@ const routes: Routes = [
           {
             path: '',
             component: MasterPageEstoqueComponent
-          },
-          {
-            path: 'cadastrar',
-            component: MasterPageEstoqueFormComponent
-          },
-          {
-            path: 'editar',
-            component: MasterPageEstoqueEditComponent
           },
         ]
       },
