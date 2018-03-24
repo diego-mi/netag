@@ -18,18 +18,12 @@ import { MasterPageFiliaisEditComponent } from './../components/pages/master/mas
 import { MasterPageFiliaisFormComponent } from './../components/pages/master/master-page-filiais-form/master-page-filiais-form.component';
 
 import { MasterPageEntregaComponent } from './../components/pages/master/master-page-entrega/master-page-entrega.component';
-import { MasterPageEntregaEditComponent } from './../components/pages/master/master-page-entrega-edit/master-page-entrega-edit.component';
-import { MasterPageEntregaFormComponent } from './../components/pages/master/master-page-entrega-form/master-page-entrega-form.component';
 
 import { MasterPageEstoqueComponent } from './../components/pages/master/master-page-estoque/master-page-estoque.component';
 
 import { MasterPageExpedicaoComponent } from './../components/pages/master/master-page-expedicao/master-page-expedicao.component';
-import { MasterPageExpedicaoEditComponent } from './../components/pages/master/master-page-expedicao-edit/master-page-expedicao-edit.component';
-import { MasterPageExpedicaoFormComponent } from './../components/pages/master/master-page-expedicao-form/master-page-expedicao-form.component';
 
 import { MasterPageRecebimentoComponent } from './../components/pages/master/master-page-recebimento/master-page-recebimento.component';
-import { MasterPageRecebimentoEditComponent } from './../components/pages/master/master-page-recebimento-edit/master-page-recebimento-edit.component';
-import { MasterPageRecebimentoFormComponent } from './../components/pages/master/master-page-recebimento-form/master-page-recebimento-form.component';
 
 
 const routes: Routes = [
@@ -103,14 +97,6 @@ const routes: Routes = [
             path: '',
             component: MasterPageRecebimentoComponent
           },
-          {
-            path: 'cadastrar',
-            component: MasterPageRecebimentoFormComponent
-          },
-          {
-            path: 'editar',
-            component: MasterPageRecebimentoEditComponent
-          },
         ]
       },
       {
@@ -119,14 +105,6 @@ const routes: Routes = [
           {
             path: '',
             component: MasterPageExpedicaoComponent
-          },
-          {
-            path: 'cadastrar',
-            component: MasterPageExpedicaoFormComponent
-          },
-          {
-            path: 'editar',
-            component: MasterPageExpedicaoEditComponent
           },
         ]
       },
@@ -145,14 +123,6 @@ const routes: Routes = [
           {
             path: '',
             component: MasterPageEntregaComponent
-          },
-          {
-            path: 'cadastrar',
-            component: MasterPageEntregaFormComponent
-          },
-          {
-            path: 'editar',
-            component: MasterPageEntregaEditComponent
           },
         ]
       },

@@ -1,3 +1,295 @@
-<p>
-  master-page-entrega works!
-</p>
+<section class="search">
+  <!--action/info/etc-->
+  <div class="search__action">
+    <h2 class="search__action__title">Empresas Cadastradas</h2>
+
+    <a class="search__action__link">
+      <span class="icon-plus-full search__action__link__icon"></span>
+      <span class="search__action__link__text" [routerLink]="['/master/empresas/cadastrar']">adicionar nova empresa</span>
+    </a>
+  </div>
+  <!--action/info/etc-->
+
+  <!-- search form -->
+  <form action="" class="search__form">
+
+    <!--search by free text-->
+    <div class="search__form__by-text">
+      <h4 class="search__form__by-text__title">Encontre uma empresa</h4>
+      <p class="search__form__by-text__text">
+        Use os filtros ou use a lupa para procurar em toda a tabela
+      </p>
+
+      <div class="form__grouped">
+        <span class="icon-search-simple form__grouped__icon"></span>
+        <input type="text" class="form__grouped__input-control">
+      </div>
+    </div>
+    <!--search by free text-->
+
+    <!--search by inputs-->
+    <div class="search__form__by-inputs">
+      <div class="search__form__by-inputs__manage-filters">
+        <p>
+          <span class="icon-filtro"></span>
+          <span class="text">Gerenciar Filtros</span>
+        </p>
+      </div>
+
+      <div class="search__form__by-inputs__content">
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="nome / razão social">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="cpf / cnpj">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="nome fantasia">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="email">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+      </div>
+    </div>
+    <!--search by inputs-->
+
+  </form>
+  <!-- search form -->
+</section>
+
+
+<!-- TABLE -->
+<div class="table-container">
+  <div class="table-container__top-actions">
+
+    <!--table action-->
+    <ul class="table-container__top-actions__list table-container__top-actions__list--left">
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-pdf"></span>
+        </span>
+      </li>
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-excel-file"></span>
+        </span>
+      </li>
+    </ul>
+    <!--table action-->
+    <!--table action-->
+    <ul class="table-container__top-actions__list table-container__top-actions__list--center">
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-arrow-left"></span>
+        </span>
+      </li>
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-arrow-right"></span>
+        </span>
+      </li>
+    </ul>
+    <!--table action-->
+    <!--table action-->
+    <ul class="table-container__top-actions__list table-container__top-actions__list--right">
+      <li class="list-action">
+        <span class="list-action__btn list-action__btn--free-width">
+          <span class="list-action__btn__icon icon-view"></span>
+          resultados por página
+          <span>10</span>
+        </span>
+      </li>
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-config"></span>
+        </span>
+      </li>
+    </ul>
+    <!--table action-->
+  </div>
+
+  <!--table - info list-->
+  <table class="table">
+
+    <thead>
+      <tr>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Nome / Razão Social
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          CPF / CNPJ
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          AG / CD
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Nome Fantasia
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Email
+        </th>
+        <th>
+          <i class="icon-ordenation th-icon-ordenation"></i>
+          Ação
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!--tr-->
+      <tr>
+        <!--list all coluns-->
+        <td class="td-first td-first--text-td-first td-first--text-normal">
+          <i class="icon-plus-full show-info index-0 td-first--btn-green"></i>
+          Anna Scherer Milla
+        </td>
+
+        <td>
+          443.356.789-00
+        </td>
+
+        <td>
+          AG
+        </td>
+
+        <td>
+        </td>
+
+        <td>
+        </td>
+
+        <!--show actions-->
+        <td class="td-first td-first--text-td-first td-first--text-normal">
+          <i class="icon-edit action-edit table__td_action" title="Editar"></i>
+          <i class="icon-delete action-delete table__td_action" title="Remover"></i>
+        </td>
+        <!--show actions-->
+      </tr>
+      <!--tr-->
+      <tr class="tr-separator">
+      </tr>
+      <!--tr-->
+      <tr>
+        <!--list all coluns-->
+        <td class="td-first td-first--text-td-first td-first--text-normal">
+          <i class="icon-plus-full show-info index-0 td-first--btn-green"></i>
+          Arysta Lifeschience do Brasil IND QUI. e AGROP. LTDA
+        </td>
+
+        <td>
+          451.123.444-22
+        </td>
+
+        <td>
+          CD
+        </td>
+
+        <td>
+          Arysta Lifeschience
+        </td>
+
+        <td>
+          wellida.santos@goldencargo.com.br
+        </td>
+
+        <!--show actions-->
+        <td class="td-first td-first--text-td-first td-first--text-normal">
+          <i class="icon-edit action-edit table__td_action" title="Editar"></i>
+          <i class="icon-delete action-delete table__td_action" title="Remover"></i>
+        </td>
+        <!--show actions-->
+      </tr>
+      <!--tr-->
+      <tr class="tr-separator">
+      </tr>
+      <!--tr-->
+      <tr>
+        <!--list all coluns-->
+        <td class="td-first td-first--text-td-first td-first--text-normal">
+          <i class="icon-plus-full show-info index-0 td-first--btn-green"></i>
+          Basf SA
+        </td>
+
+        <td>
+          557449265-11
+        </td>
+
+        <td>
+          CD
+        </td>
+
+        <td>
+          Basf SA
+        </td>
+
+        <td>
+          barfsa@goldencargo.com.br
+        </td>
+
+        <!--show actions-->
+        <td class="td-first td-first--text-td-first td-first--text-normal">
+          <i class="icon-edit action-edit table__td_action" title="Editar"></i>
+          <i class="icon-delete action-delete table__td_action" title="Remover"></i>
+        </td>
+        <!--show actions-->
+      </tr>
+      <!--tr-->
+      <tr class="tr-separator">
+      </tr>
+      <!--tr-->
+      <tr>
+        <!--list all coluns-->
+        <td class="td-first td-first--text-td-first td-first--text-normal">
+          <i class="icon-plus-full show-info index-0 td-first--btn-green"></i>
+          Cargill Agricola S.A.
+        </td>
+
+        <td>
+          654.876.913-33
+        </td>
+
+        <td>
+          AG
+        </td>
+
+        <td>
+          Cargill Agricola S.A.
+        </td>
+
+        <td>
+          danielli_coelho@cargil.com
+        </td>
+
+        <!--show actions-->
+        <td class="td-first td-first--text-td-first td-first--text-normal">
+          <i class="icon-edit action-edit table__td_action" title="Editar"></i>
+          <i class="icon-delete action-delete table__td_action" title="Remover"></i>
+        </td>
+        <!--show actions-->
+      </tr>
+      <!--tr-->
+    </tbody>
+
+  </table>
+  <!--table - info list-->
+
+</div>
+<!-- TABLE -->

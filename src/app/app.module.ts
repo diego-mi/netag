@@ -34,15 +34,8 @@ import { MasterPageGruposEditComponent } from './components/pages/master/master-
 import { MasterPageGruposFormComponent } from './components/pages/master/master-page-grupos-form/master-page-grupos-form.component';
 import { MasterPageEstoqueComponent } from './components/pages/master/master-page-estoque/master-page-estoque.component';
 import { MasterPageRecebimentoComponent } from './components/pages/master/master-page-recebimento/master-page-recebimento.component';
-import { MasterPageRecebimentoFormComponent } from './components/pages/master/master-page-recebimento-form/master-page-recebimento-form.component';
-import { MasterPageRecebimentoEditComponent } from './components/pages/master/master-page-recebimento-edit/master-page-recebimento-edit.component';
 import { MasterPageExpedicaoComponent } from './components/pages/master/master-page-expedicao/master-page-expedicao.component';
-import { MasterPageExpedicaoEditComponent } from './components/pages/master/master-page-expedicao-edit/master-page-expedicao-edit.component';
-import { MasterPageExpedicaoFormComponent } from './components/pages/master/master-page-expedicao-form/master-page-expedicao-form.component';
 import { MasterPageEntregaComponent } from './components/pages/master/master-page-entrega/master-page-entrega.component';
-import { MasterPageEntregaFormComponent } from './components/pages/master/master-page-entrega-form/master-page-entrega-form.component';
-import { MasterPageEntregaEditComponent } from './components/pages/master/master-page-entrega-edit/master-page-entrega-edit.component';
-
 
 @NgModule({
   declarations: [
@@ -77,14 +70,8 @@ import { MasterPageEntregaEditComponent } from './components/pages/master/master
     MasterPageGruposFormComponent,
     MasterPageEstoqueComponent,
     MasterPageRecebimentoComponent,
-    MasterPageRecebimentoFormComponent,
-    MasterPageRecebimentoEditComponent,
     MasterPageExpedicaoComponent,
-    MasterPageExpedicaoEditComponent,
-    MasterPageExpedicaoFormComponent,
     MasterPageEntregaComponent,
-    MasterPageEntregaFormComponent,
-    MasterPageEntregaEditComponent
   ],
   imports: [
     BrowserModule,
