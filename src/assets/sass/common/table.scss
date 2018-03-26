@@ -104,6 +104,28 @@
         border: none;
         height: 10px;
       }
+      &.tr-content {
+        display: none;
+        background-color: rgba(238, 237, 237, .58);
+        & .tr-content-wrapper {
+          @extend .flex;
+          flex-flow: column;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          &>h3 {
+            color: $color-primary;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 35px;
+          }
+          &>p {
+            font-size: 18px;
+            line-height: 22px;
+            color: $color-gray-fifth;
+            margin: 7px 0px;
+          }
+        }
+      }
       &>td {
         height: 80px;
         line-height: 78px;
