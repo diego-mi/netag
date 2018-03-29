@@ -158,6 +158,10 @@
           top: 16px;
           right: -8px;
           cursor: pointer;
+
+          &:before {
+            background-color: #fff;
+          }
         }
       }
     }
