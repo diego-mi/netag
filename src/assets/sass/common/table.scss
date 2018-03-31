@@ -1,7 +1,7 @@
 .table-container {
   @extend .box;
   padding: 33px 22px;
-  margin: 0 40px 80px;
+  margin: 35px 40px 80px;
   position: relative;
 }
 
@@ -110,17 +110,18 @@
         & .tr-content-wrapper {
           @extend .flex;
           flex-flow: column;
-          padding-top: 20px;
-          padding-bottom: 20px;
+          padding-top: 30px;
+          padding-bottom: 40px;
           &>h3 {
             color: $color-primary;
             font-size: 18px;
             font-weight: 500;
             line-height: 35px;
+            font-weight: medium;
           }
           &>p {
             font-size: 18px;
-            line-height: 22px;
+            line-height: 40px;
             color: $color-gray-fifth;
             margin: 7px 0px;
           }

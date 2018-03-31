@@ -43,4 +43,4 @@ var TableContentInfo = {
   }
 }
 
-$(".td-first--btn").on("click", TableContentInfo.toggle);
+$("body").on("click", ".td-first--btn", TableContentInfo.toggle);
