@@ -30,7 +30,7 @@ var TableContentInfo = {
 
 
 
-    $("." + targetContent).slideDown();
+    $("." + targetContent).fadeIn();
     TableContentInfo.trSelected.data("showing-content", true);
   },
   closeContent: function () {
@@ -38,7 +38,7 @@ var TableContentInfo = {
     console.info(targetContent);
     console.info($("." + targetContent));
 
-    $("." + targetContent).slideUp();
+    $("." + targetContent).fadeOut();
     TableContentInfo.trSelected.data("showing-content", false);
   }
 }
