@@ -14,18 +14,34 @@ var CadastroSimplificado = {
   isSimplified: function () {
     return !!$(".checkbox-cadastro-simplificado").is(":checked");
   },
+  /* Show Functions */
   setAsSimple: function () {
+    CadastroSimplificado.showInputs();
+    CadastroSimplificado.setLayoutItens();
+  },
+  showInputs: function () {
     var inputSimplifiedContainer = $(".input-simplified");
 
     inputSimplifiedContainer.show();
     inputSimplifiedContainer.find('input').prop("disabled", false);
   },
+  setLayoutItens: function () {
+    $(".checkbox-cadastro-simplificado").parent().parent().addClass("form-is-simplified--active");
+  },
+  /* Hide Functions */
   setAsDefault: function () {
+    CadastroSimplificado.hideInputs();
+    CadastroSimplificado.removeLayoutItens();
+  },
+  hideInputs: function () {
     var inputSimplifiedContainer = $(".input-simplified");
 
     inputSimplifiedContainer.hide();
     inputSimplifiedContainer.find('input').prop("disabled", true);
-  }
+  },
+  removeLayoutItens: function () {
+    $(".checkbox-cadastro-simplificado").parent().parent().removeClass("form-is-simplified--active");
+  },
 }
 
 $("body").on("change", ".checkbox-cadastro-simplificado", CadastroSimplificado.toggle);
