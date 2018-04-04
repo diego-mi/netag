@@ -1,0 +1,93 @@
+.modal {
+    position: relative;
+    @extend .flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+
+    &--overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, .7);
+        z-index: 5;
+    }
+
+    &--close-container {
+        position: absolute;
+        top: 0;
+        right: -60px;
+        cursor: pointer;
+
+        & .icon-close {
+            &:before {
+                color: #fff;
+                font-size: 40px;
+            }
+        }
+
+        
+    }
+
+    &--container {
+        width: 533px;
+        // height: 623px;
+        background-color: #fff;
+        z-index: 6;
+        position: relative;
+        border-radius: 20px;
+        padding: 60px 70px 40px;
+    }
+
+    &--title{
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 29px;
+        text-align: center;
+        margin-bottom: 66px;
+            color: $color-primary;
+    }
+    &--text{
+        font-family: Roboto;
+        font-size: 18px;
+        line-height: 1.4;
+
+        &--ornament {
+            color: $color-primary;
+        }
+
+        & + & {
+            margin-top: 25px;
+        }
+    }
+
+    &--action {
+        margin-top: 80px;
+
+        & .modal--btn-icon-text {
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: bold;
+            color: $color-primary;
+            text-align: center;
+            background: transparent;
+            border: none;
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            outline: none;
+
+            & .icon-delete {
+                color: #727376;
+            }
+        }
+    }
+}
