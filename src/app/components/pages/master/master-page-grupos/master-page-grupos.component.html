@@ -176,7 +176,7 @@
         <!--show actions-->
         <td class="td-first td-first--text-td-first td-first--text-normal">
           <a [routerLink]="['/master/grupos/editar']" class="icon-edit action-edit table__td_action" title="Editar"></a>
-          <i class="icon-delete action-delete table__td_action" title="Remover"></i>
+          <i class="icon-delete action-delete table__td_action  open-modal" data-modal-id="modal-deletar" title="Remover"></i>
         </td>
         <!--show actions-->
       </tr>
@@ -220,7 +220,7 @@
         <!--show actions-->
         <td class="td-first td-first--text-td-first td-first--text-normal">
           <a [routerLink]="['/master/grupos/editar']" class="icon-edit action-edit table__td_action" title="Editar"></a>
-          <i class="icon-delete action-delete table__td_action" title="Remover"></i>
+          <i class="icon-delete action-delete table__td_action  open-modal" data-modal-id="modal-deletar" title="Remover"></i>
         </td>
         <!--show actions-->
       </tr>
@@ -252,12 +252,12 @@
 <!-- TABLE -->
 
 <!-- modal excluir -->
-<div class="modal modal-delete">
+<div id="modal-deletar" class="modal modal-delete">
   <div class="modal--overlay"></div>
 
   <div class="modal--container">
 
-    <div class="modal--close-container">
+    <div class="modal--close-container close-modal" data-modal-id="modal-deletar">
       <i class="icon-close icon-close-lg"></i>
     </div>
 
@@ -280,9 +280,40 @@
     <div class="modal--action">
       <button class="modal--btn-icon-text">
         <i class="modal--btn--icon icon-delete"></i>
-        <span class="modal--btn--text">Sim, confirmar exclusão</span>
+        <span class="modal--btn--text close-open-modal" data-modal-id-open="modal-deletado" data-modal-id-close="modal-deletar">Sim, confirmar exclusão</span>
       </button>
     </div>
   </div>
 </div>
 <!-- modal excluir -->
+
+<!-- modal item removido -->
+<div id="modal-deletado" class="modal modal-delete">
+  <div class="modal--overlay"></div>
+
+  <div class="modal--container">
+
+        <div class="modal--close-container close-modal" data-modal-id="modal-deletado">
+          <i class="icon-close icon-close-lg"></i>
+        </div>
+
+
+    <div class="modal--header--icon-container">
+      <span class="modal--header--icon icon-form-modal-success"></span>
+    </div>
+
+    <p class="modal--text">
+      <span class="modal--text--ornament">Nome do grupo:</span> Anna Scherer Mila
+    </p>
+    
+    <p class="modal--text">
+      <span class="modal--text--ornament">Empresa principal:</span> Anna Scherer Mila
+    </p>
+    
+    <p class="modal--text">
+      <span class="modal--text--ornament">Empresas integrantes do grupo:</span>
+      <br> Anna Scherer Mila(AG), Ernest Mila(AG), Egon Heinrich Mila(AG), Robert Mila(AG)
+    </p>
+  </div>
+</div>
+<!-- modal item removido -->
