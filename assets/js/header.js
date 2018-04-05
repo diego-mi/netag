@@ -32,4 +32,4 @@ var HeaderToggleSubmenu = {
 };
 
 
-$('.header__nav__list__item').on('click', HeaderToggleSubmenu.toggleSubmenu);
+$("body").on('click', '.header__nav__list__item', HeaderToggleSubmenu.toggleSubmenu);

@@ -1,0 +1,61 @@
+.filiais--container {
+    @extend .flex;
+    justify-content: flex-start;
+    padding: 25px 33px;
+    flex-wrap: wrap;
+}
+
+.filial-item {
+    @extend .box;
+    padding: 20px;
+    width: calc(calc(100% / 6) - 15px);
+    margin: 15px 7px;
+    position: relative;
+    background-color: #F4F4F4;
+
+    &--edit-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+
+        &:before {
+            color: $color-primary;
+        }
+    }
+
+    &--icon-delete {
+        position: absolute;
+        bottom: -8px;
+        right: calc(50% - 6px);
+        cursor: pointer;
+        background-color: #F4F4F4;
+    }
+
+    &--title {
+        font-family: Roboto;
+        font-size: 20px;
+        color: $color-primary;
+        line-height: 30px;
+        font-weight: bold;
+    }
+    &--text-destaque {
+        font-family: Roboto;
+        font-size: 20px;
+        color: $color-primary;
+        line-height: 30px;
+    }
+    &--text {
+        font-family: Roboto;
+        font-size: 20px;
+        color: $color-gray-fifth;
+        line-height: 30px;
+    }
+    &--text-info {
+        margin-top: 25px;
+        font-family: Roboto;
+        font-size: 20px;
+        color: color-gray-eighth;
+        line-height: 30px;
+    }
+}

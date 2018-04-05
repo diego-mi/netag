@@ -45,6 +45,10 @@
   font-size: 20px;
   line-height: 30px;
   color: $color-gray-fifth;
+  transition: color .3s;
+  &--active {
+    color: $color-primary;
+  }
 }
 
 // Form content
@@ -163,12 +167,16 @@ div.form-group label.input-label,
  */
 
 .checkbox-slider {
-  width: 35px;
+  width: 32px;
   height: 15px;
   background: rgba(100, 100, 100, 0.2);
   position: relative;
   border-radius: 10px;
   display: inline-block;
+}
+
+.form-is-simplified--active .checkbox-slider {
+  background: rgba(178, 45, 48, .3);
 }
 
 .checkbox-slider .checkbox {
@@ -177,8 +185,8 @@ div.form-group label.input-label,
 
 .checkbox-slider label {
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   transition: all .5s ease;
   cursor: pointer;
@@ -186,12 +194,15 @@ div.form-group label.input-label,
   top: 0;
   left: 0;
   background: $color-gray-fifth;
+  border: 1px solid #fff;
 }
 
 .checkbox-slider input[type=checkbox]:checked+label {
-  left: 27px;
+  left: 18px;
   background: $color-primary;
-} // FORM BTN
+}
+
+// FORM BTN
 .form-actions {
   @extend .box;
   @extend .flex;
