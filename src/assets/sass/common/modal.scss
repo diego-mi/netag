@@ -1,6 +1,6 @@
 .modal {
     position: relative;
-    @extend .flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -9,7 +9,11 @@
     bottom: 0;
     right: 0;
     z-index: 5;
+    transition: all .3s;
 
+    &--opened {
+        display: flex !important;
+    }
 
     &--overlay {
         position: fixed;
@@ -88,6 +92,25 @@
             & .icon-delete {
                 color: #727376;
             }
+        }
+    }
+}
+
+.modal--header--icon-container {
+    width: 167px;
+    height: 167px;
+    border-radius: 50%;
+    border: 4px solid $color-primary;
+    @extend .flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    & .modal--header--icon {
+        &:before {
+            color: $color-primary;
+            font-size: 80px;
         }
     }
 }

@@ -30,3 +30,7 @@
   content: "\e902";
   color: #a1a4a6;
 }
+.icon-form-modal-success:before {
+  content: "\e903";
+  color: #b22d30;
+}

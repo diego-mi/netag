@@ -179,7 +179,7 @@
         <!--show actions-->
         <td class="td-first td-first--text-td-first td-first--text-normal">
           <i class="icon-edit action-edit table__td_action" title="Editar"></i>
-          <i class="icon-delete action-delete table__td_action" title="Remover"></i>
+          <i class="icon-delete action-delete table__td_action open-modal" data-modal-id="modal-deletar" title="Remover"></i>
         </td>
         <!--show actions-->
       </tr>
@@ -213,7 +213,7 @@
         <!--show actions-->
         <td class="td-first td-first--text-td-first td-first--text-normal">
           <i class="icon-edit action-edit table__td_action" title="Editar"></i>
-          <i class="icon-delete action-delete table__td_action" title="Remover"></i>
+          <i class="icon-delete action-delete table__td_action open-modal" data-modal-id="modal-deletar" title="Remover"></i>
         </td>
         <!--show actions-->
       </tr>
@@ -281,7 +281,7 @@
         <!--show actions-->
         <td class="td-first td-first--text-td-first td-first--text-normal">
           <i class="icon-edit action-edit table__td_action" title="Editar"></i>
-          <i class="icon-delete action-delete table__td_action" title="Remover"></i>
+          <i class="icon-delete action-delete table__td_action open-modal" data-modal-id="modal-deletar" title="Remover"></i>
         </td>
         <!--show actions-->
       </tr>
@@ -293,3 +293,69 @@
 
 </div>
 <!-- TABLE -->
+
+<div id="modal-deletar" class="modal modal-delete">
+  <div class="modal--overlay"></div>
+
+  <div class="modal--container">
+
+    <div class="modal--close-container close-modal" data-modal-id="modal-deletar">
+      <i class="icon-close icon-close-lg"></i>
+    </div>
+
+
+    <h2 class="modal--title">Você tem certeza que deseja excluir a empresa abaixo?</h2>
+
+    <p class="modal--text">
+      <span class="modal--text--ornament">Nome da empresa:</span> Anna Scherer Mila
+      <br>
+      <span class="modal--text--ornament">Nome Fantasia:</span> Anna Scherer Mila
+      <br>
+      <span class="modal--text--ornament">CNPJ da empresa principal:</span> 0000000000000
+    </p>
+
+    <p class="modal--text">
+      <span class="modal--text--ornament">Email para contato:</span>
+      <br>
+      email@contato.com.br
+    </p>
+
+    <div class="modal--action">
+      <button class="modal--btn-icon-text">
+        <i class="modal--btn--icon icon-delete"></i>
+        <span class="modal--btn--text modal-removido close-open-modal" data-modal-id-open="modal-deletado" data-modal-id-close="modal-deletar">Sim, confirmar exclusão</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- modal item removido -->
+<div id="modal-deletado" class="modal modal-delete">
+  <div class="modal--overlay"></div>
+
+  <div class="modal--container">
+
+    <div class="modal--close-container close-modal" data-modal-id="modal-deletado">
+      <i class="icon-close icon-close-lg"></i>
+    </div>
+
+
+    <div class="modal--header--icon-container">
+      <span class="modal--header--icon icon-form-modal-success"></span>  
+    </div>
+
+    <p class="modal--text">
+      <span class="modal--text--ornament">Nome da empresa:</span> Anna Scherer Mila
+      <br>
+      <span class="modal--text--ornament">Nome Fantasia:</span> Anna Scherer Mila
+      <br>
+      <span class="modal--text--ornament">CNPJ da empresa principal:</span> 0000000000000
+    </p>
+
+    <p class="modal--text">
+      <span class="modal--text--ornament">Email para contato:</span>
+      <br> email@contato.com.br
+    </p>
+  </div>
+</div>
+<!-- modal item removido -->
