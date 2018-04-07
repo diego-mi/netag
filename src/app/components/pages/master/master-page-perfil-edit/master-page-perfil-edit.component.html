@@ -1,3 +1,185 @@
-<p>
-  master-page-perfil-edit works!
-</p>
+<form class="form">
+  <!-- block title form -->
+  <header class="form-header">
+    <h2 class="form-title">
+      <i class="icon-edit"></i>
+      Editar Perfil
+    </h2>
+    <p class="form-description">Altere as informações ao lado e clique em confirmar</p>
+
+    <div class="form-is-simplified">
+      Cadastro simplificado
+      <div class="checkbox-slider">
+        <input class="checkbox checkbox-cadastro-simplificado" type="checkbox" value="1" id="checkbox-cad-simple" name="">
+        <label for="checkbox-cad-simple"></label>
+      </div>
+    </div>
+  </header>
+  <!-- block title form -->
+
+  <!-- form content -->
+  <div class="form-content">
+    <!-- form row -->
+    <div class="form-row">
+      <!-- form-group -->
+      <div class="form-group form-group--half">
+        <p class="form-section-title">
+          <span class="text">Dados da empresa</span>
+        </p>
+        <input type="text" class="form-control" placeholder="Nome / Razão Social">
+      </div>
+      <!-- form-group -->
+      <!-- form-group -->
+      <div class="form-group form-group--half">
+        <label class="label-fake"></label>
+        <input type="text" class="form-control" placeholder="Nome Fantasia">
+      </div>
+      <!-- form-group -->
+    </div>
+    <!-- form row -->
+    <!-- form row -->
+    <div class="form-row">
+      <!-- form-group -->
+      <div class="form-group form-group--half">
+        <input type="text" class="form-control" placeholder="CNPJ">
+      </div>
+      <!-- form-group -->
+      <!-- form-group -->
+      <div class="form-group form-group--half">
+        <label for="">
+          <input type="checkbox" value="normal" name="prioridade" /> AG
+        </label>
+        
+        <label for="">
+          <input type="checkbox" value="normal" name="prioridade" /> CD
+        </label>
+      </div>
+      <!-- form-group -->
+    </div>
+    <!-- form row -->
+    <!-- form row -->
+    <div class="form-row">
+      <!-- form-group -->
+      <div class="form-group form-group--half input-simplified">
+        <p class="form-section-title">
+          <span class="text">Dados do usuário</span>
+        </p>
+        <input type="text" class="form-control" placeholder="email">
+      </div>
+      <!-- form-group -->
+      <!-- form-group -->
+      <div class="form-group form-group--half input-simplified">
+        <label class="label-fake"></label>
+        <input type="password" class="form-control" placeholder="************">
+      </div>
+      <!-- form-group -->
+    </div>
+    <!-- form row -->
+    <!-- form row -->
+    <div class="form-row">
+      <!-- form-group -->
+      <div class="form-group form-group--half input-simplified">
+
+        <label class="input-label" for="">
+          <input type="checkbox" value="1" name="" />
+          Usuário Master
+        </label>
+
+        <label class="input-label" for="">
+          <input type="checkbox" value="1" name="" />
+          Administrador do sistema
+        </label>
+
+      </div>
+      <!-- form-group -->
+      <!-- form-group -->
+      <div class="form-group form-group--half input-simplified">
+
+        <label class="input-label" for="">
+          <input type="checkbox" value="1" name="" />
+          Visualização de dados com pagamento expirado
+        </label>
+      </div>
+
+      <!-- form-group -->
+    </div>
+    <!-- form row -->
+    <!-- form row -->
+    <div class="form-row">
+      <!-- form-group -->
+      <div class="form-group form-group--half">
+        <p class="form-section-title">
+          <span class="text">Outros</span>
+        </p>
+        <select class="form-control" name="" id="">
+          <option value="">matriz do grupo</option>
+        </select>
+      </div>
+      <!-- form-group -->
+      <!-- form-group -->
+      <div class="form-group form-group--half">
+        <label class="label-fake">
+        </label>
+        <select class="form-control" name="" id="">
+          <option value="">30 - BALSAS / MA</option>
+        </select>
+      </div>
+      <!-- form-group -->
+    </div>
+    <!-- form row -->
+    <!-- form row -->
+    <div class="form-row">
+      <!-- form-group -->
+      <div class="form-group form-group--half input-simplified">
+        <p class="form-section-title">
+          <span class="text">Parâmetros</span>
+        </p>
+        <input type="text" class="form-control" placeholder="email para contato">
+      </div>
+      <!-- form-group -->
+      <!-- form-group -->
+      <div class="form-group form-group--half input-simplified">
+        <label class="label-fake">
+        </label>
+        <select class="form-control" name="" id="">
+          <option value="">periodo de busca (interno )</option>
+        </select>
+      </div>
+      <!-- form-group -->
+    </div>
+    <!-- form row --><!-- form row -->
+    <div class="form-row">
+      <!-- form-group -->
+      <div class="form-group form-group--half input-simplified">
+        <select class="form-control" name="" id="">
+          <option value="">periodo de busca (getal)</option>
+        </select>
+      </div>
+      <!-- form-group -->
+      <!-- form-group -->
+      <div class="form-group form-group--half input-simplified">
+        <select class="form-control" name="" id="">
+          <option value="">dias para alerta de vencimento </option>
+        </select>
+      </div>
+      <!-- form-group -->
+    </div>
+    <!-- form row -->
+  </div>
+  <!-- form content -->
+
+  <!-- form actions -->
+  <div class="form-actions">
+    <h2 class="form-title">
+      Finalização
+    </h2>
+    <button class="form-btn form-btn-finish form-btn-large">
+      <span class="icon-form-finish">
+        <span class="icon-form-finish-single first"></span>
+        <span class="icon-form-finish-single second"></span>
+      </span>
+      <span class="text">confirmar & finalizar</span>
+    </button>
+  </div>
+  <!-- form actions -->
+</form>

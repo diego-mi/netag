@@ -25,6 +25,7 @@ import { MasterPageExpedicaoComponent } from './../components/pages/master/maste
 
 import { MasterPageRecebimentoComponent } from './../components/pages/master/master-page-recebimento/master-page-recebimento.component';
 import { MasterPageSolicitacoesComponent } from '../components/pages/master/master-page-solicitacoes/master-page-solicitacoes.component';
+import { MasterPagePerfilEditComponent } from '../components/pages/master/master-page-perfil-edit/master-page-perfil-edit.component';
 
 
 const routes: Routes = [
@@ -133,6 +134,15 @@ const routes: Routes = [
           {
             path: '',
             component: MasterPageSolicitacoesComponent
+          },
+        ]
+      },
+      {
+        path: 'perfil',
+        children: [
+          {
+            path: '',
+            component: MasterPagePerfilEditComponent
           },
         ]
       },
