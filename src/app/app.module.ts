@@ -36,6 +36,10 @@ import { MasterPageEstoqueComponent } from './components/pages/master/master-pag
 import { MasterPageRecebimentoComponent } from './components/pages/master/master-page-recebimento/master-page-recebimento.component';
 import { MasterPageExpedicaoComponent } from './components/pages/master/master-page-expedicao/master-page-expedicao.component';
 import { MasterPageEntregaComponent } from './components/pages/master/master-page-entrega/master-page-entrega.component';
+import { MasterPageSolicitacoesComponent } from './components/pages/master/master-page-solicitacoes/master-page-solicitacoes.component';
+import { MasterPagePerfilEditComponent } from './components/pages/master/master-page-perfil-edit/master-page-perfil-edit.component';
+import { MasterPageFaleConoscoComponent } from './components/pages/master/master-page-fale-conosco/master-page-fale-conosco.component';
+import { MasterPageNotificacoesComponent } from './components/pages/master/master-page-notificacoes/master-page-notificacoes.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +76,10 @@ import { MasterPageEntregaComponent } from './components/pages/master/master-pag
     MasterPageRecebimentoComponent,
     MasterPageExpedicaoComponent,
     MasterPageEntregaComponent,
+    MasterPageSolicitacoesComponent,
+    MasterPagePerfilEditComponent,
+    MasterPageFaleConoscoComponent,
+    MasterPageNotificacoesComponent,
   ],
   imports: [
     BrowserModule,

@@ -24,6 +24,7 @@ import { MasterPageEstoqueComponent } from './../components/pages/master/master-
 import { MasterPageExpedicaoComponent } from './../components/pages/master/master-page-expedicao/master-page-expedicao.component';
 
 import { MasterPageRecebimentoComponent } from './../components/pages/master/master-page-recebimento/master-page-recebimento.component';
+import { MasterPageSolicitacoesComponent } from '../components/pages/master/master-page-solicitacoes/master-page-solicitacoes.component';
 
 
 const routes: Routes = [
@@ -123,6 +124,15 @@ const routes: Routes = [
           {
             path: '',
             component: MasterPageEntregaComponent
+          },
+        ]
+      },
+      {
+        path: 'solicitacoes',
+        children: [
+          {
+            path: '',
+            component: MasterPageSolicitacoesComponent
           },
         ]
       },
