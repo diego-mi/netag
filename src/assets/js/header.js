@@ -14,12 +14,10 @@ var HeaderToggleSubmenu = {
     var navList = $(this).parent();
 
     if (navList.hasClass(HeaderClasses.headerNavListNoSubmenuClass)) {
-      console.log('no-submenu');
       return false;
     }
 
     event.preventDefault();
-    console.log('submenu');
 
     if (navList.hasClass(HeaderClasses.headerNavListOpenedClass)) {
       $(HeaderClasses.headerClass).removeClass(HeaderClasses.headerSubmenuOpenedClass);
@@ -31,5 +29,36 @@ var HeaderToggleSubmenu = {
   }
 };
 
-
 $("body").on('click', '.header__nav__list__item', HeaderToggleSubmenu.toggleSubmenu);
+
+
+/**
+ * Submenu User functions
+ */
+
+var HeaderUserMenu = {
+  toggle: function() {
+    var submenu = $(".header__user-menu__submenu");
+
+    submenu.hasClass("header__user-menu__submenu--opened")
+      ? HeaderUserMenu.close(submenu)
+      : HeaderUserMenu.open(submenu);
+  },
+  open: function (submenu) {
+    HeaderUserMenu.transitionStarted(submenu);
+    submenu.addClass("header__user-menu__submenu--opened");
+  },
+  transitionStarted: function (submenu) {
+    submenu.addClass("header__user-menu__submenu--opening");
+    setTimeout(function() {
+      submenu.removeClass("header__user-menu__submenu--opening");
+    }, 300);
+  },
+  close: function (submenu) {
+    HeaderUserMenu.transitionStarted(submenu);
+    submenu.removeClass("header__user-menu__submenu--opened");
+  },
+};
+
+$("body").on('click', '.header__user-menu', HeaderUserMenu.toggle);
+
