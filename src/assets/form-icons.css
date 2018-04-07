@@ -1,12 +1,15 @@
 @font-face {
   font-family: 'form-icon';
-  src: url('fonts/form-icon.eot?tjwfkc');
-  src: url('fonts/form-icon.eot?tjwfkc#iefix') format('embedded-opentype'), url('fonts/form-icon.ttf?tjwfkc') format('truetype'), url('fonts/form-icon.woff?tjwfkc') format('woff'), url('fonts/form-icon.svg?tjwfkc#form-icon') format('svg');
+  src:  url('fonts/form-icon.eot?2rcaui');
+  src:  url('fonts/form-icon.eot?2rcaui#iefix') format('embedded-opentype'),
+    url('fonts/form-icon.ttf?2rcaui') format('truetype'),
+    url('fonts/form-icon.woff?2rcaui') format('woff'),
+    url('fonts/form-icon.svg?2rcaui#form-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-form"],
+[class^="icon-form"], 
 [class*=" icon-form"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'form-icon' !important;
@@ -16,21 +19,120 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-form-finish-single:before {
+.icon-editar-perfil:before {
   content: "\e900";
-  color: #a1a4a6;
+  color: #676668;
 }
-
-.icon-form-finish-repeat:before {
+.icon-expedicao:before {
+  content: "\e901";
+  color: #b22d30;
+}
+.icon-finish-two .path1:before {
   content: "\e902";
+  color: rgb(161, 164, 166);
+  opacity: 0.4;
+}
+.icon-finish-two .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(161, 164, 166);
+}
+.icon-form-aguardando:before {
+  content: "\e904";
+  color: #b22d30;
+}
+.icon-form-alert-full .path1:before {
+  content: "\e905";
+  color: rgb(178, 45, 48);
+}
+.icon-form-alert-full .path2:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-form-caminhao:before {
+  content: "\e907";
+  color: #b22d30;
+}
+.icon-form-caminhao-success .path1:before {
+  content: "\e908";
+  color: rgb(178, 45, 48);
+}
+.icon-form-caminhao-success .path2:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-form-finish .path1:before {
+  content: "\e90a";
+  color: rgb(161, 164, 166);
+  opacity: 0.4;
+}
+.icon-form-finish .path2:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(161, 164, 166);
+}
+.icon-form-finish-repeat:before {
+  content: "\e90c";
   color: #a1a4a6;
 }
 .icon-form-modal-success:before {
-  content: "\e903";
+  content: "\e90d";
+  color: #b22d30;
+}
+.icon-nota-fiscal:before {
+  content: "\e90e";
+  color: #b22d30;
+}
+.icon-notificacoes:before {
+  content: "\e90f";
+  color: #676668;
+}
+.icon-pacote:before {
+  content: "\e910";
+  color: #b22d30;
+}
+.icon-prancheta:before {
+  content: "\e911";
+  color: #b22d30;
+}
+.icon-previsao-entrega:before {
+  content: "\e912";
+  color: #b22d30;
+}
+.icon-sair:before {
+  content: "\e913";
+  color: #676668;
+}
+.icon-separacao:before {
+  content: "\e914";
+  color: #b22d30;
+}
+.icon-sino:before {
+  content: "\e915";
+  color: #b22d30;
+}
+.icon-sino-notificacao:before {
+  content: "\e916";
+  color: #676668;
+}
+.icon-star-gold .path1:before {
+  content: "\e917";
+  color: rgb(0, 0, 0);
+}
+.icon-star-gold .path2:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-trator-carregar:before {
+  content: "\e919";
   color: #b22d30;
 }
