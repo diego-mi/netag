@@ -1,3 +1,296 @@
-<p>
-  master-page-notificacoes works!
-</p>
+<section class="search search--notificacoes">
+  <!--action/info/etc-->
+  <div class="search__action">
+
+    <div class="search__action__notification-icon">
+      <!--<i class="icon-form-alert-full">-->
+        <!--<span class="path1"></span>-->
+        <!--<span class="path2"></span>-->
+      <!--</i>-->
+    </div>
+
+    <h2 class="search__action__title">
+      <i class="icon-form-sino"></i>
+      Alertas!
+    </h2>
+
+    <p class="search__action__text">
+      Veja a lista completa de pendências. Caso deseje ver as notas separadamente, é só clicar no box indicador ao lado.
+    </p>
+  </div>
+  <!--action/info/etc-->
+
+  <!-- info -->
+  <div class="search__info">
+
+    <p class="search__info__number">586</p>
+
+    <p class="search__info__text">
+      Notas Proximas à pagamento
+    </p>
+
+  </div>
+  <!-- info -->
+
+  <!-- info -->
+  <div class="search__info">
+
+    <p class="search__info__number">96</p>
+
+    <p class="search__info__text">
+      Notas Pendentes de regulamentação
+    </p>
+
+  </div>
+  <!-- info -->
+
+  <!-- search form -->
+  <form action="" class="search__form">
+
+    <!--search by free text-->
+    <div class="search__form__by-text">
+      <h4 class="search__form__by-text__title">Encontre uma empresa</h4>
+      <p class="search__form__by-text__text">
+        Use os filtros ou use a lupa para procurar em toda a tabela
+      </p>
+
+      <div class="form__grouped">
+        <span class="icon-search-simple form__grouped__icon"></span>
+        <input type="text" class="form__grouped__input-control">
+      </div>
+    </div>
+    <!--search by free text-->
+
+    <!--search by inputs-->
+    <div class="search__form__by-inputs">
+      <div class="search__form__by-inputs__manage-filters">
+        <p>
+          <span class="icon-filtro"></span>
+          <span class="text">Gerenciar Filtros</span>
+        </p>
+      </div>
+
+      <div class="search__form__by-inputs__content">
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="nome / razão social">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="cpf / cnpj">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="nome fantasia">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+
+        <!--input-->
+        <div class="form__group">
+          <input class="form__group__input" type="text" placeholder="email">
+          <span class="icon-close-sm form__group__close"></span>
+        </div>
+        <!--input-->
+      </div>
+    </div>
+    <!--search by inputs-->
+
+  </form>
+  <!-- search form -->
+</section>
+
+
+<!-- TABLE -->
+<div class="table-container">
+  <div class="table-container__top-actions">
+
+    <!--table action-->
+    <ul class="table-container__top-actions__list table-container__top-actions__list--left">
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-pdf"></span>
+        </span>
+      </li>
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-excel-file"></span>
+        </span>
+      </li>
+    </ul>
+    <!--table action-->
+    <!--table action-->
+    <ul class="table-container__top-actions__list table-container__top-actions__list--center">
+
+    </ul>
+    <!--table action-->
+    <!--table action-->
+    <ul class="table-container__top-actions__list table-container__top-actions__list--right">
+      <li class="list-action">
+        <span class="list-action__btn list-action__btn--free-width">
+          <span class="list-action__btn__icon icon-view"></span>
+          resultados por página
+          <span>10</span>
+        </span>
+      </li>
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-arrow-left"></span>
+        </span>
+      </li>
+      <li class="list-action">
+        <span class="list-action__btn">
+          <span class="list-action__btn__icon icon-arrow-right"></span>
+        </span>
+      </li>
+    </ul>
+    <!--table action-->
+  </div>
+
+  <!--table - info list-->
+  <table class="table">
+
+    <thead>
+    <tr>
+      <th>
+        Filial
+      </th>
+      <th>
+        Fornecedor
+      </th>
+      <th>
+        Depositante
+      </th>
+      <th>
+        Nota Fiscal
+      </th>
+      <th>
+        Série
+      </th>
+      <th>
+        Quantidade
+      </th>
+      <th>
+        Valor Total NF
+      </th>
+      <th>
+        Dias em atrazo
+      </th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <!--tr-->
+    <tr>
+      <!--list all coluns-->
+      <td>
+        Balsas - MA
+      </td>
+
+      <td>
+        Du Pont do Brasil SA
+      </td>
+
+      <td>
+        Agenor Valmir Rosa
+      </td>
+
+      <td>
+        543
+      </td>
+
+      <td>
+        1
+      </td>
+      <td>
+        250
+      </td>
+      <td>
+        R$ 29.635,00
+      </td>
+      <td>
+        13
+      </td>
+    </tr>
+    <!--tr-->
+    <tr class="tr-separator">
+    </tr>
+    <!--tr-->
+    </tbody>
+
+  </table>
+  <!--table - info list-->
+
+</div>
+<!-- TABLE -->
+
+<!-- modal excluir -->
+<div id="modal-deletar" class="modal modal-delete">
+  <div class="modal--overlay"></div>
+
+  <div class="modal--container">
+
+    <div class="modal--close-container close-modal" data-modal-id="modal-deletar">
+      <i class="icon-close icon-close-lg"></i>
+    </div>
+
+
+    <h2 class="modal--title">Você tem certeza que deseja excluir a empresa abaixo?</h2>
+
+    <p class="modal--text">
+      <span class="modal--text--ornament">Nome da empresa:</span> Anna Scherer Mila
+      <br>
+      <span class="modal--text--ornament">Nome Fantasia:</span> Anna Scherer Mila
+      <br>
+      <span class="modal--text--ornament">CNPJ da empresa principal:</span> 0000000000000
+    </p>
+
+    <p class="modal--text">
+      <span class="modal--text--ornament">Email para contato:</span>
+      <br> email@contato.com.br
+    </p>
+
+    <div class="modal--action">
+      <button class="modal--btn-icon-text">
+        <i class="modal--btn--icon icon-delete"></i>
+        <span class="modal--btn--text modal-removido close-open-modal" data-modal-id-open="modal-deletado" data-modal-id-close="modal-deletar">Sim, confirmar exclusão</span>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- modal excluir -->
+
+<!-- modal item removido -->
+<div id="modal-deletado" class="modal modal-delete fadeInDown">
+  <div class="modal--overlay"></div>
+
+  <div class="modal--container">
+
+    <div class="modal--close-container close-modal" data-modal-id="modal-deletado">
+      <i class="icon-close icon-close-lg"></i>
+    </div>
+
+
+    <div class="modal--header--icon-container">
+      <span class="modal--header--icon icon-form-modal-success"></span>
+    </div>
+
+    <p class="modal--text">
+      <span class="modal--text--ornament">Nome da empresa:</span> Anna Scherer Mila
+      <br>
+      <span class="modal--text--ornament">Nome Fantasia:</span> Anna Scherer Mila
+      <br>
+      <span class="modal--text--ornament">CNPJ da empresa principal:</span> 0000000000000
+    </p>
+
+    <p class="modal--text">
+      <span class="modal--text--ornament">Email para contato:</span>
+      <br> email@contato.com.br
+    </p>
+  </div>
+</div>
+<!-- modal item removido -->

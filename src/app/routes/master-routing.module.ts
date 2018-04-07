@@ -27,6 +27,7 @@ import { MasterPageRecebimentoComponent } from './../components/pages/master/mas
 import { MasterPageSolicitacoesComponent } from '../components/pages/master/master-page-solicitacoes/master-page-solicitacoes.component';
 import { MasterPagePerfilEditComponent } from '../components/pages/master/master-page-perfil-edit/master-page-perfil-edit.component';
 import { MasterPageFaleConoscoComponent } from '../components/pages/master/master-page-fale-conosco/master-page-fale-conosco.component';
+import {MasterPageNotificacoesComponent} from '../components/pages/master/master-page-notificacoes/master-page-notificacoes.component';
 
 
 const routes: Routes = [
@@ -156,9 +157,19 @@ const routes: Routes = [
           },
         ]
       },
+      {
+        path: 'notificacoes',
+        children: [
+          {
+            path: '',
+            component: MasterPageNotificacoesComponent
+          },
+        ]
+      },
     ]
   }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

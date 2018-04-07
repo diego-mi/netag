@@ -1,0 +1,55 @@
+.search--notificacoes {
+
+  .search__action {
+    position: relative;
+  }
+
+  .search__action__notification-icon {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    top: -26px;
+    right: -20px;
+
+  }
+
+  .search__info {
+    @extend .flex;
+    @extend .box;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 250px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    &__number {
+      font-size: 83px;
+      line-height: 109px;
+      color: $color-primary;
+      text-align: center;
+      font-weight: bold;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 30px;
+      color: $color-gray-eighth;
+      text-align: center;
+    }
+  }
+
+  // Filtros
+  & .search__form {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 25px);
+    margin-left: 25px;
+
+    & .search__form__by-inputs__content .form__group{
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: calc(50% - 25px);
+    }
+  }
+}
