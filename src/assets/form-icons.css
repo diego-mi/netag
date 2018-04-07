@@ -25,20 +25,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-editar-perfil:before {
+.icon-form-editar-perfil:before {
   content: "\e900";
   color: #676668;
 }
-.icon-expedicao:before {
+.icon-form-expedicao:before {
   content: "\e901";
   color: #b22d30;
 }
-.icon-finish-two .path1:before {
+.icon-form-finish-two .path1:before {
   content: "\e902";
   color: rgb(161, 164, 166);
   opacity: 0.4;
 }
-.icon-finish-two .path2:before {
+.icon-form-finish-two .path2:before {
   content: "\e903";
   margin-left: -1em;
   color: rgb(161, 164, 166);
@@ -87,52 +87,52 @@
   content: "\e90d";
   color: #b22d30;
 }
-.icon-nota-fiscal:before {
+.icon-form-nota-fiscal:before {
   content: "\e90e";
   color: #b22d30;
 }
-.icon-notificacoes:before {
+.icon-form-notificacoes:before {
   content: "\e90f";
   color: #676668;
 }
-.icon-pacote:before {
+.icon-form-pacote:before {
   content: "\e910";
   color: #b22d30;
 }
-.icon-prancheta:before {
+.icon-form-prancheta:before {
   content: "\e911";
   color: #b22d30;
 }
-.icon-previsao-entrega:before {
+.icon-form-previsao-entrega:before {
   content: "\e912";
   color: #b22d30;
 }
-.icon-sair:before {
+.icon-form-sair:before {
   content: "\e913";
   color: #676668;
 }
-.icon-separacao:before {
+.icon-form-separacao:before {
   content: "\e914";
   color: #b22d30;
 }
-.icon-sino:before {
+.icon-form-sino:before {
   content: "\e915";
   color: #b22d30;
 }
-.icon-sino-notificacao:before {
+.icon-form-sino-notificacao:before {
   content: "\e916";
   color: #676668;
 }
-.icon-star-gold .path1:before {
+.icon-form-star-gold .path1:before {
   content: "\e917";
   color: rgb(0, 0, 0);
 }
-.icon-star-gold .path2:before {
+.icon-form-star-gold .path2:before {
   content: "\e918";
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
-.icon-trator-carregar:before {
+.icon-form-trator-carregar:before {
   content: "\e919";
   color: #b22d30;
 }
