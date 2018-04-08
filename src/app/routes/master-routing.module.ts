@@ -28,6 +28,7 @@ import { MasterPageSolicitacoesComponent } from '../components/pages/master/mast
 import { MasterPagePerfilEditComponent } from '../components/pages/master/master-page-perfil-edit/master-page-perfil-edit.component';
 import { MasterPageFaleConoscoComponent } from '../components/pages/master/master-page-fale-conosco/master-page-fale-conosco.component';
 import {MasterPageNotificacoesComponent} from '../components/pages/master/master-page-notificacoes/master-page-notificacoes.component';
+import {DatatableComponent} from '../components/pages/master/datatable/datatable.component';
 
 
 const routes: Routes = [
@@ -163,6 +164,15 @@ const routes: Routes = [
           {
             path: '',
             component: MasterPageNotificacoesComponent
+          },
+        ]
+      },
+      {
+        path: 'datatable',
+        children: [
+          {
+            path: '',
+            component: DatatableComponent
           },
         ]
       },
