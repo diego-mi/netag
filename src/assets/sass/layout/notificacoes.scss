@@ -1,4 +1,6 @@
 .search--notificacoes {
+  padding-top: 50px;
+
 
   .search__action {
     position: relative;
@@ -6,11 +8,24 @@
 
   .search__action__notification-icon {
     position: absolute;
-    width: 72px;
-    height: 72px;
+    width: 77px;
+    height: 77px;
     top: -26px;
     right: -20px;
+    border-radius: 24px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .icon-form-alert-notification-status {
+    width: 72px;
+    height: 72px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("./assets/img/icones-png/alert-notifications.png");
   }
 
   .search__info {
@@ -18,7 +33,7 @@
     @extend .box;
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 250px;
+    flex-basis: 14%;
     padding: 20px;
     justify-content: center;
     align-items: center;
@@ -43,13 +58,55 @@
   & .search__form {
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: calc(50% - 25px);
-    margin-left: 25px;
+    flex-basis: 50%;
+    margin-left: 2%;
 
-    & .search__form__by-inputs__content .form__group{
+    & .search__form__by-inputs__content .form__group {
       flex-grow: 0;
       flex-shrink: 0;
       flex-basis: calc(50% - 25px);
     }
   }
 }
+
+
+.notifications-alert-no-notifications {
+  @extend .box;
+  padding: 65px 25px;
+  margin: 10px 40px 50px;
+  display: none;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  & .icone {
+    width: 72px;
+    height: 72px;
+    display: block;
+  }
+
+  & .text {
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    line-height: 55px;
+    font-weight: bold;
+    color: #9B9B9B;
+    text-align: center;
+    margin-top: 25px;
+  }
+}
+
+.no-notifications {
+  .icon-form-alert-notification-status {
+    background-image: url("./assets/img/icones-png/alert-no-notifications.png");
+  }
+
+  & .table-container {
+    display: none;
+  }
+
+  .notifications-alert-no-notifications {
+    @extend .flex;
+  }
+}
+

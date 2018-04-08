@@ -40,6 +40,7 @@ import { MasterPageSolicitacoesComponent } from './components/pages/master/maste
 import { MasterPagePerfilEditComponent } from './components/pages/master/master-page-perfil-edit/master-page-perfil-edit.component';
 import { MasterPageFaleConoscoComponent } from './components/pages/master/master-page-fale-conosco/master-page-fale-conosco.component';
 import { MasterPageNotificacoesComponent } from './components/pages/master/master-page-notificacoes/master-page-notificacoes.component';
+import { DatatableComponent } from './components/pages/master/datatable/datatable.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import { MasterPageNotificacoesComponent } from './components/pages/master/maste
     MasterPagePerfilEditComponent,
     MasterPageFaleConoscoComponent,
     MasterPageNotificacoesComponent,
+    DatatableComponent,
   ],
   imports: [
     BrowserModule,
