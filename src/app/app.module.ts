@@ -41,6 +41,7 @@ import { MasterPagePerfilEditComponent } from './components/pages/master/master-
 import { MasterPageFaleConoscoComponent } from './components/pages/master/master-page-fale-conosco/master-page-fale-conosco.component';
 import { MasterPageNotificacoesComponent } from './components/pages/master/master-page-notificacoes/master-page-notificacoes.component';
 import { DatatableComponent } from './components/pages/master/datatable/datatable.component';
+import { MasterModalFiltrosComponent } from './components/pages/master/master-modal-filtros/master-modal-filtros.component';
 
 @NgModule({
   declarations: [
@@ -82,6 +83,7 @@ import { DatatableComponent } from './components/pages/master/datatable/datatabl
     MasterPageFaleConoscoComponent,
     MasterPageNotificacoesComponent,
     DatatableComponent,
+    MasterModalFiltrosComponent,
   ],
   imports: [
     BrowserModule,

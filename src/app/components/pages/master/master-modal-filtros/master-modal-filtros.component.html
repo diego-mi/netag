@@ -1,0 +1,118 @@
+<div id="modal-gerenciar-filtros" class="modal modal-filtros">
+  <div class="modal--overlay"></div>
+
+  <div class="modal--container--filtros">
+
+    <div class="modal--close-container close-modal" data-modal-id="modal-gerenciar-filtros">
+      <i class="icon-close icon-close-lg"></i>
+    </div>
+    <form class="form">
+      <!-- block title form -->
+      <header class="form-header">
+        <h2 class="form-title">
+          <i class="icon-edit"></i>
+          Ajuste sua Visualização
+        </h2>
+        <p class="form-description">
+          Pensando em seu perfil, a equipe Golden Cargo sugere uma visualização de tabela para consulta de seu estoque.<br><br>
+          Voce pode usa-la da forma sugerida ou ajusta-la como desejar, através do botão de configuração da tabela, localizado no canto superior direito.
+        </p>
+      </header>
+      <!-- block title form -->
+
+      <!-- form content -->
+      <div class="form-content form-content--filtros">
+        <!-- Informações Disponíveis -->
+        <div class="form-content--informacoes">
+          <h2 class="form-title">
+            Informações Disponíveis
+          </h2>
+          <p class="form-description">
+            Aqui você pode ativar quais colunas usar e sua ordem de visualização. Para alterar a ordem, você pode clicar e arrastar nas opções da coluna da direita.<br><br>
+            A configuração é valida apenas para visualização online. Ao exportar os resultados, será feito download da tabela completa.
+          </p>
+        </div>
+        <!-- Informações Disponíveis -->
+        <!--ordenacao-->
+        <div class="form-content--ordenacao">
+          <label for="">
+            <input type="checkbox">
+            Status
+          </label>
+          <label for="">
+            <input type="checkbox">
+            Filial & Código
+          </label>
+          <label for="">
+            <input type="checkbox">
+            Nome & Pagador
+          </label>
+          <label for="">
+            <input type="checkbox">
+            Nota Definitiva
+          </label>
+          <label for="">
+            <input type="checkbox">
+            Valor total NF
+          </label>
+          <label for="">
+            <input type="checkbox">
+            Cód. Produto
+          </label>
+          <label for="">
+            <input type="checkbox">
+            Descrição
+          </label>
+          <label for="">
+            <input type="checkbox">
+            Lote
+          </label>
+        </div>
+        <!--ordenacao-->
+        <!--ordem de colunas-->
+        <div class="form-content--ordem-colunas">
+          <ul class="ordenacao-colunas">
+            <li class="ordenacao-colunas--tabela" draggable="true">
+              Status
+            </li>
+            <li class="ordenacao-colunas--tabela" draggable="true">
+              Filial & Código
+            </li>
+            <li class="ordenacao-colunas--tabela" draggable="true">
+              Nome & Pagador
+            </li>
+            <li class="ordenacao-colunas--tabela" draggable="true">
+              Nota Definitiva
+            </li>
+            <li class="ordenacao-colunas--tabela" draggable="true">
+              Valor Total NF
+            </li>
+            <li class="ordenacao-colunas--tabela" draggable="true">
+              Cód. Produto
+            </li>
+            <li class="ordenacao-colunas--tabela" draggable="true">
+              Descrição
+            </li>
+            <li class="ordenacao-colunas--tabela" draggable="true">
+              Lote
+            </li>
+          </ul>
+        </div>
+        <!--ordem de colunas-->
+      </div>
+      <!-- form content -->
+
+      <!-- form actions -->
+      <div class="form-actions">
+        <h2 class="form-title">
+          Finalização
+        </h2>
+
+        <div class="form-btn form-btn-add-repeat close-modal" data-modal-id="modal-gerenciar-filtros">
+          <span class="icon-form-finish-repeat"></span>
+        </div>
+      </div>
+      <!-- form actions -->
+    </form>
+  </div>
+</div>
