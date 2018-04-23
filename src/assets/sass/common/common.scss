@@ -19,3 +19,23 @@ body {
     text-align: center;
   }
 }
+
+// Clearfix
+
+.clearfix::before, .clearfix::after {
+  content: ' ';
+  display: table;
+}
+.clearfix::after {
+clear: both;
+}
+
+// color
+
+html body .txt-c-gray-8 {
+color: $color-gray-eighth;
+}
+html body .txt-c-primary {
+color: $color-primary;
+}
+
